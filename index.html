@@ -29,10 +29,9 @@
   <header>
     <nav class="header-menu">
       <a href="/">🏠 홈</a>
-      <a href="/notices">📌 공지</a>
-      <a href="/adelineross">📂 Adeline Ross</a>
-      <a href="/vanessawhite">📂 Vanessa White</a>
-      <a href="/kalinaheloise">📂 Kalina Freyja Héloïse</a>
+      <a href="/categories/notice">📌 공지</a>
+      <a href="/categories/test">📂 test</a>
+      <a href="/categories/info">📂 info</a>
       <a href="#" id="darkModeToggle" class="dark-toggle-btn">🌙 / ☀️</a>
     </nav>
   </header>
@@ -46,14 +45,14 @@
       <img src="https://cdn.discordapp.com/attachments/1351547047890649131/1351604829356687431/e726504c7af76feb.png?ex=67dafb96&is=67d9aa16&hm=72c97793c969a1acaf90083d833d200eb373d247bab89fbfde78b45c6313ade8&" alt="프로필 사진">
     </div>
     <div class="blog-name">
-      <h2>demo</h2>
+      <h2>나레</h2>
       </div>
       <div class="blog-twitter">
-      <p>@your_twitter</p>
+      <p>@SOl02_R</p>
       </div>
       <div class="intro-card">
       <p class="blog-intro">
-      블로그 소개: 여기에 간단한 소개글을 작성할 수 있습니다.
+      다용도 홈페이지 제작 중
     </div>
   </div>
 
@@ -62,11 +61,9 @@
     <div class="menu-title">menu</div>
      <nav class="sidebar-menu">
     <ul>
-      {% for category in site.categories %}
-    <li>
-      <a href="/categories/{{ category[0] }}/">{{ category[0] }}</a> ({{ category[1].size }})
-    </li>
-  {% endfor %}
+      <li><a href="/categories/notice">Notice</a></li>
+      <li><a href="/categories/test">Test</a></li>
+      <li><a href="/categories/info">Info</a></li>
     </ul>
       </nav>
   </div>
