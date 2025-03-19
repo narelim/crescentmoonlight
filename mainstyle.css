@@ -59,7 +59,7 @@
     border-radius: 12px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 40px; /* 오른쪽으로 이동 */
+    left: 60px; /* 오른쪽으로 이동 */
   }
   .header-menu a {
     text-decoration: none;
@@ -80,16 +80,16 @@
    /* 🔹 왼쪽 프로필/메뉴 영역 */
   .sidebar {
     position: fixed;
-    top: 250;
+    top: 270px;
     left: 0;
     width: 220px;
-    height: 250px;
+    height: calc(100vh - 270px);
     background-color: #fddce5; /* 좀 더 진한 핑크 */
     border-right: 2px dotted #d6b2c3; /* 점선 구분선 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0 20px;
+    padding-top: 20px;
     z-index: 5; 
   }
 
@@ -180,7 +180,7 @@
   
    /* 🔹 메뉴 리스트 */
   .sidebar-menu {
-    list-style: none;
+    list-style-type: none;  /* 리스트 앞 점 제거 */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -216,6 +216,7 @@
     padding: 20px;
     background-color: #fffafc;
   }
+  
   body.dark-mode main {
     color: #ccc;
   }
