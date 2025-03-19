@@ -82,7 +82,7 @@
     top: 320px;
     left: 0;
     width: 220px;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 320px);
     background-color: #fddce5; /* 좀 더 진한 핑크 */
     border-right: 2px dotted #d6b2c3; /* 점선 구분선 */
     display: flex;
@@ -209,11 +209,12 @@
    /* 🔹 오른쪽 메인 컨텐츠 */
   main {
     position: absolute;
-    top: 320px;  /* 헤더 높이 */
+    top: 360px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
     overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
     padding: 20px;
+    padding-top: 20px; /* 추가 여백 확보 */
     background-color: #fffafc;
   }
 
