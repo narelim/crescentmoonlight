@@ -66,6 +66,6 @@ minima:
   #  - title: Jekyll at X (formerly Twitter)
   #    icon: x-twitter
   #    url: "https://x.com/jekyllrb"
-  url: "https://narelim.github.io"
+  url: "https://narelim.github.io/"
   baseurl: ""
   future: true
