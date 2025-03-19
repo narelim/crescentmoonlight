@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{Title}</title>
+  
+  <!-- Google Fonts -->
+  <!-- 구글 폰트-->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Jua (헤더 메뉴, 사이드바 이름) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+<!-- Nanum Gothic (블로그 소개) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+<!-- Sonsie One (사이드바 메뉴) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap">
+<!-- Homemade Apple (리스트, 포스트 목록 등) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+<!-- Black Han Sans (공지 타이틀) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
+<!-- Nanum Myeongjo (공지 내용) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap">
+
+<link rel="stylesheet" href="https://narelim.github.io/mainstyle.css">
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <nav class="header-menu">
+      <a href="/">🏠 홈</a>
+      <a href="/notices">📌 공지</a>
+      <a href="/adelineross">📂 Adeline Ross</a>
+      <a href="/vanessawhite">📂 Vanessa White</a>
+      <a href="/kalinaheloise">📂 Kalina Freyja Héloïse</a>
+      <a href="#" id="darkModeToggle" class="dark-toggle-btn">🌙 / ☀️</a>
+    </nav>
+  </header>
+
+    <!-- 왼쪽 사이드바 -->
+  <div class="sidebar">
+  <aside class="sidebar">
+  <div class="profile-container">
+     <!-- 프로필 사진 -->
+    <div class="profile-pic">
+      <img src="https://cdn.discordapp.com/attachments/1351547047890649131/1351604829356687431/e726504c7af76feb.png?ex=67dafb96&is=67d9aa16&hm=72c97793c969a1acaf90083d833d200eb373d247bab89fbfde78b45c6313ade8&" alt="프로필 사진">
+    </div>
+    <div class="blog-name">
+      <h2>demo</h2>
+      </div>
+      <div class="blog-twitter">
+      <p>@your_twitter</p>
+      </div>
+      <div class="intro-card">
+      <p class="blog-intro">
+      블로그 소개: 여기에 간단한 소개글을 작성할 수 있습니다.
+    </div>
+  </div>
+
+
+    <!-- 메뉴 타이틀 & 리스트 -->
+    <div class="menu-title">menu</div>
+     <nav class="sidebar-menu">
+    <ul>
+      <li><a href="/notices">Notice</a></li>
+      <li><a href="/adelineross">Adeline Ross</a></li>
+      <li><a href="/vanessawhite">Vanessa White</a></li>
+      <li><a href="/kalinaheloise">Kalina Freyja Héloïse</a></li>
+    </ul>
+      </nav>
+  </div>
+
+  <!-- 메인 컨텐츠 -->
+  <main>
+    <!-- 공지 박스 -->
+    <div class="notice-box">
+      <h2>Notice</h2>
+      <h3>Under the Moonlig</h3>
+      
+      <!-- 공지 이미지 (샘플) -->
+      <div class="notice-img">
+        <!-- <img src="공지이미지_URL" alt="공지 이미지"> -->
+      </div>
+      
+      <!-- "자세히 보기" 버튼 -->
+      <a href="{Permalink}" class="notice-btn">자세히 보기</a>
+    </div>
+  </main>
+
+  <!-- 스크립트 -->
+  <script>
+    // 다크모드 토글
+    const darkModeBtn = document.getElementById("darkModeToggle");
+    darkModeBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.body.classList.toggle("dark-mode");
+    });
+
+    // AJAX로 본문만 불러오기 (SPA-like)
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".header-menu a:not(#darkModeToggle)");
+
+      links.forEach(link => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault(); // 기본 이동 막기
+          const url = this.getAttribute("href");
+
+          // AJAX로 본문만 불러오기
+          fetch(url)
+            .then(response => response.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(html, "text/html");
+
+              // 📌 페이지의 <main> 태그만 가져오기
+              const newContent = doc.querySelector("main");
+
+              if (newContent) {
+                document.querySelector("main").innerHTML = newContent.innerHTML;
+                history.pushState(null, "", url);
+              } else {
+                console.error("페이지에 <main> 태그가 없습니다!");
+              }
+            })
+            .catch(error => console.error("페이지를 불러오는 중 오류 발생!", error));
+        });
+      });
+    });
+  </script>
+</body>
+</html>
