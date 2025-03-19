@@ -62,10 +62,11 @@
     <div class="menu-title">menu</div>
      <nav class="sidebar-menu">
     <ul>
-      <li><a href="/notices">Notice</a></li>
-      <li><a href="/adelineross">Adeline Ross</a></li>
-      <li><a href="/vanessawhite">Vanessa White</a></li>
-      <li><a href="/kalinaheloise">Kalina Freyja Héloïse</a></li>
+      {% for category in site.categories %}
+    <li>
+      <a href="/categories/{{ category[0] }}/">{{ category[0] }}</a> ({{ category[1].size }})
+    </li>
+  {% endfor %}
     </ul>
       </nav>
   </div>
