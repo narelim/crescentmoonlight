@@ -94,13 +94,13 @@
 
   /* 🔹 프로필 사진 (원형) */
   .profile-pic {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;   /* 절대 위치 */
     top: -100px;          /* 헤더 위로 올라오도록 음수 값 */
-   left: 20px;          /* 좌우 위치 조정 */
+   left: 30px;          /* 좌우 위치 조정 */
    z-index: 10;          /* 헤더보다 높게 */
    border: 4px solid var(--accent-color);
     display: flex;
@@ -179,7 +179,7 @@
    /* 🔹 메뉴 리스트 */
   .sidebar-menu {
     list-style: none;  /* 리스트 앞 점 제거 */
-    padding-left: 0;
+    padding-left: -5;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -212,9 +212,9 @@
     top: 360px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
+    height: calc(100% - 360px);
     overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
     padding: 20px;
-    padding-top: 20px; /* 추가 여백 확보 */
     background-color: #fffafc;
   }
 
