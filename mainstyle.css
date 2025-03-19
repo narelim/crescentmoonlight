@@ -180,7 +180,7 @@
   .sidebar-menu {
     list-style: none; /* 리스트 앞 점 제거 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
-    padding-left: 20px; /* 왼쪽 여백 추가 */
+    padding-left: 10px; /* 왼쪽 여백 추가 */
     margin: 0 auto; /* 메뉴 자체는 가운데 정렬 */
     width: 80%; /* 사이드바 내부에서 적절한 너비 */
     margin-top: 10px;
@@ -210,7 +210,7 @@
    /* 🔹 오른쪽 메인 컨텐츠 */
   main {
     position: absolute;
-    top: 360px;  /* 헤더 높이 */
+    top: 320px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
     padding: 20px;
