@@ -30,7 +30,7 @@
   /* 헤더 스타일 */
   header {
     width: 100%;
-    height: 200px; 
+    height: 270px; 
     text-align: center;
     position: fixed;
     top: 0;
@@ -59,7 +59,7 @@
     border-radius: 12px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 60px; /* 오른쪽으로 이동 */
+    left: 80px; /* 오른쪽으로 이동 */
   }
   .header-menu a {
     text-decoration: none;
@@ -95,14 +95,14 @@
 
   /* 🔹 프로필 사진 (원형) */
   .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;   /* 절대 위치 */
     top: -100px;          /* 헤더 위로 올라오도록 음수 값 */
    left: 20px;          /* 좌우 위치 조정 */
-   z-index: 2;          /* 헤더보다 높게 */
+   z-index: 10;          /* 헤더보다 높게 */
    border: 4px solid var(--accent-color);
     display: flex;
   align-items: center;
@@ -180,14 +180,16 @@
   
    /* 🔹 메뉴 리스트 */
   .sidebar-menu {
-    list-style-type: none;  /* 리스트 앞 점 제거 */
-    padding: 0;
+    list-style: none;  /* 리스트 앞 점 제거 */
+    padding-left: 0;
     margin: 0;
     width: 100%;
     text-align: center;
     margin-top: 10px;
   }
   .sidebar-menu li {
+    list-style-type: none;
+    padding: 5px 0;
     margin: 6px 0;
   }
   .sidebar-menu li a {
@@ -216,7 +218,7 @@
     padding: 20px;
     background-color: #fffafc;
   }
-  
+
   body.dark-mode main {
     color: #ccc;
   }
