@@ -213,6 +213,7 @@
     top: 320px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
+    min-height: 100vh;
     padding: 20px;
     overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
     background-color: #fffafc;
