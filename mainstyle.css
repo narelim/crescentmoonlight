@@ -120,7 +120,7 @@
     align-items: flex-start;
     padding-left: 20px;
    padding-right: 20px;
-   padding-top: 150px;
+   padding-top: 130px;
    
   }
 
@@ -195,7 +195,7 @@
     color: #5b4a59;
     font-weight: bold;
     font-size: 14px;
-    padding: 4px 8px;
+    padding: 4px 0;
     border-radius: 6px;
     transition: background 0.3s ease;
     font-family: 'Homemade Apple', cursive;
@@ -212,7 +212,6 @@
     top: 360px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
-    height: calc(100% - 360px);
     overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
     background-color: #fffafc;
   }
