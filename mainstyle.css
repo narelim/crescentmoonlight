@@ -99,8 +99,8 @@
     border-radius: 50%;
     overflow: hidden;
     position: absolute;   /* 절대 위치 */
-    top: -130px;          /* 헤더 위로 올라오도록 음수 값 */
-    left: 40px;          /* 좌우 위치 조정 */
+    top: -150px;          /* 헤더 위로 올라오도록 음수 값 */
+    left: 30px;          /* 좌우 위치 조정 */
    z-index: 10;          /* 헤더보다 높게 */
    border: 4px solid var(--accent-color);
     display: flex;
@@ -212,6 +212,7 @@
     top: 360px;  /* 헤더 높이 */
     margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
     width: calc(100% - 220px);
+    padding: 20px;
     overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
     background-color: #fffafc;
   }
