@@ -1,0 +1,312 @@
+ /* 전체 글씨 & 기본 설정 */
+ body {
+    background-color: #ffeef3; /* 부드러운 파스텔 핑크 */
+    background-image: url('https://i.ibb.co/t4TH5jr/polka-dot.png'); /* 예시: 도트 패턴 */
+    background-repeat: repeat;
+    background-size: 150px; /* 패턴 크기 */
+    color: #444;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 다크모드 전환 부드럽게 */
+  }
+   /* 다크모드 시 전체 색상 반전 */
+  body.dark-mode {
+    background-color: #2e2e2e; 
+    background-image: none; /* 다크모드에서 패턴 제거(원한다면 유지 가능) */
+    color: #ddd; 
+  }
+
+  /* 기본 테마 컬러 */
+  :root {
+    --main-color: #ffcad4; 
+    --accent-color: #d6c7e1; 
+    --text-color: #6c4c7b;
+  }
+
+  /* 헤더 스타일 */
+  header {
+    width: 100%;
+    height: 200px; 
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: rgba(255, 202, 212, 0.4); /* 헤더 영역 은은하게 */
+    backdrop-filter: blur(5px); /* 반투명 유리효과 */
+    border-bottom: 3px dashed var(--accent-color);
+  }
+
+  /* 헤더 메뉴 */
+  .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 6px 10px;
+    padding-left: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  .header-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    font-family: 'Jua', sans-serif;
+  }
+  .header-menu a:hover {
+    background: var(--accent-color);
+    color: white;
+  }
+
+  /* 사이드바 */
+   /* 🔹 왼쪽 프로필/메뉴 영역 */
+  .sidebar {
+    position: fixed;
+    top: 200;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #fddce5; /* 좀 더 진한 핑크 */
+    border-right: 2px dotted #d6b2c3; /* 점선 구분선 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0 20px;
+    z-index: 5; 
+  }
+
+  /* 🔹 프로필 사진 (원형) */
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;   /* 절대 위치 */
+    top: -100px;          /* 헤더 위로 올라오도록 음수 값 */
+   left: 20px;          /* 좌우 위치 조정 */
+   z-index: 2;          /* 헤더보다 높게 */
+   border: 4px solid var(--accent-color);
+    display: flex;
+  align-items: center;
+   justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 180px;
+   
+  }
+
+ /* 🔹 블로그 이름, 트위터, 소개 */
+  .blog-name {
+    align-self: flex-start; 
+    
+    text-align: left; 
+    width: 100%; 
+    padding-left: 5px; 
+    margin-top: 10px; 
+    font-family: 'Jua', sans-serif; /* 굵고 귀여운 폰트 */
+    font-size: 20px;
+    margin: 0;
+    padding: 0; 
+    color: #5b4a59;
+    line-height: 1.2;
+  }
+  .blog-twitter {
+    align-self: flex-start; 
+    text-align: left; 
+    width: 100%; 
+    padding-left: 5px; 
+    margin-top: 10px; 
+    font-size: 14px;
+    margin: -40px 0;
+    color: #666;
+  }
+  /* 카드 스타일 */
+  .intro-card {
+    background-color: #fffafc;  /* 연한 배경색 (핑크/크림) */
+    border: 2px dashed #d6b2c3; /* 점선 테두리 예시 */
+    border-radius: 8px;         /* 모서리 둥글게 */
+    padding: 10px 15px;         /* 내부 여백 */
+    width: 80%;                /* 사이드바 너비에 맞춤 (필요시 조정) */
+    margin: 35px auto 0 auto;
+
+  }
+  
+   .intro-card .blog-intro {
+   text-align: left; 
+    font-size: 13px;
+    margin: 0;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+
+  /* 🔹 "menu" 타이틀 */
+  .menu-title {
+    font-family: 'Sonsie One', cursive;
+    font-size: 22px;
+    color: #5b4a59;
+    margin: 40px 0 10px;
+  }
+  
+   /* 🔹 메뉴 리스트 */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sidebar-menu li {
+    margin: 6px 0;
+  }
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: #5b4a59;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    font-family: 'Homemade Apple', cursive;
+  }
+  .sidebar-menu li a:hover {
+    background: #eac0cf; /* 살짝 진한 핑크 하이라이트 */
+    color: #fff;
+  }
+  
+
+   /* 🔹 오른쪽 메인 컨텐츠 */
+  main {
+    position: absolute;
+    top: 200px;  /* 헤더 높이 */
+    margin-left: 220px; /* 사이드바 너비만큼 띄우기 */
+    width: calc(100% - 220px);
+    overflow-y: auto; /* 메인 콘텐츠만 스크롤 */
+    padding: 20px;
+    background-color: #fffafc;
+  }
+  body.dark-mode main {
+    color: #ccc;
+  }
+
+   /* 🔹 공지 박스(점선 테두리) */
+  .notice-box {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fffafc;
+    border: 2px dotted #d6b2c3; /* 점선 테두리 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  body.dark-mode #top-notice {
+    background-color: #4b4b4b;
+    border-color: #666;
+    color: #ddd;
+  }
+
+  /* 공지 이미지 */
+  .notice-post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .notice-post img {
+    width: 70px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+/* 🔹 공지 타이틀 */
+  .notice-box h2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 24px;
+    color: #5b4a59;
+    margin-bottom: 8px;
+    font-family: 'Homemade Apple', cursive;
+  }
+
+  .notice-text h3 {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-family: 'Homemade Apple', cursive;
+  }
+  .notice-text p {
+    font-size: 13px;
+    color: var(--text-color);
+    margin-bottom: 3px;
+    font-family: 'Nanum Myeongjo', serif;
+  }
+  /* 🔹 공지 이미지 */
+  .notice-img {
+    width: 100px;
+    height: 100px;
+    background-color: #eee; /* 예시: 실제 이미지가 없을 경우 */
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+/* 🔹 공지 버튼 */
+  .notice-box a.notice-btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #5b4a59;
+    background: #fddce5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  .notice-box a.notice-btn:hover {
+    background: #eac0cf;
+    color: #fff;
+  }
+
+  /* 다크모드 토글 */
+  .dark-toggle-btn {
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-size: 13px;
+  }
+  .dark-toggle-btn:hover {
+    background: var(--accent-color);
+    color: white;
+  }
