@@ -178,11 +178,11 @@
   
    /* 🔹 메뉴 리스트 */
   .sidebar-menu {
-    list-style: none;  /* 리스트 앞 점 제거 */
-    padding-left: 10;
-    margin: 0;
-    width: 100%;
-    text-align: center;
+    list-style: none; /* 리스트 앞 점 제거 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    padding-left: 20px; /* 왼쪽 여백 추가 */
+    margin: 0 auto; /* 메뉴 자체는 가운데 정렬 */
+    width: 80%; /* 사이드바 내부에서 적절한 너비 */
     margin-top: 10px;
   }
   .sidebar-menu li {
@@ -199,6 +199,7 @@
     border-radius: 6px;
     transition: background 0.3s ease;
     font-family: 'Homemade Apple', cursive;
+    display: inline-block;
   }
   .sidebar-menu li a:hover {
     background: #eac0cf; /* 살짝 진한 핑크 하이라이트 */
