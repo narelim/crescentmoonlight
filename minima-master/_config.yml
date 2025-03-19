@@ -1,7 +1,7 @@
-title: Your awesome title
+title: treasure box
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: princess201
+  email: narelim0119@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -13,7 +13,7 @@ description: >
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
-theme: minima
+#theme: minima
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
 # If you want to use the latest Minima version on GitHub Pages, use the following setting and 
@@ -40,7 +40,9 @@ minima:
   # the `path` property (as represented via Liquid) of the pages in the order they should
   # be rendered.
   nav_pages:
-    - about.md
+    - test.md
+    - info.md
+    - notice.md
 
   # Set to `true` to show excerpts on the homepage.
   #show_excerpts: false
@@ -64,3 +66,6 @@ minima:
   #  - title: Jekyll at X (formerly Twitter)
   #    icon: x-twitter
   #    url: "https://x.com/jekyllrb"
+  url: "https://narelim.github.io"
+  baseurl: ""
+  future: true
