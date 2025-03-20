@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonlight</title>
+  
+  <!-- Google Fonts -->
+  <!-- 구글 폰트-->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Jua (헤더 메뉴, 사이드바 이름) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+<!-- Nanum Gothic (블로그 소개) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+<!-- Sonsie One (사이드바 메뉴) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap">
+<!-- Homemade Apple (리스트, 포스트 목록 등) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+<!-- Black Han Sans (공지 타이틀) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
+<!-- Nanum Myeongjo (공지 내용) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap">
+
+<link rel="stylesheet" href="styles/oc.css">
+</head>
+<body>
+     <!-- 공통 헤더 -->
+     <header>
+      <div class="header-container">
+          <a href="index.html" class="logo">✧ moonlight ✧</a>
+      </div>
+      <h1>My Original Characters</h1>
+      <img src="assets/images/home/header.png" alt="헤더 이미지" class="header-image">
+      <nav class="menu-bar">
+          <ul>
+              <li><a href="index.html">♥</a></li>
+              <li><a href="notice.html">Notice</a></li>
+              <li><a href="oc.html" onclick="switchCategory('oc')">OC</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="dnd.html" onclick="switchCategory('dnd')">DnD</a></li>
+          </ul>
+      </nav>
+     </header>
+      <!-- 본문 -->
+    <main class="content">
+        <h2>Original Characters</h2>
+        
+        <!-- OC 캐릭터 선택 영역 -->
+        <div class="oc-list">
+            <button onclick="showCharacter('adeline')">Adeline</button>
+            <button onclick="showCharacter('vanessa')">Vanessa</button>
+            <button onclick="showCharacter('kalina')">Kalina</button>
+        </div>
+
+        <!-- OC 정보 표시 -->
+        <div id="character-info">
+            <p>캐릭터를 선택하면 정보가 여기에 표시됩니다.</p>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>© 2024 Moonlight | All rights reserved.</p>
+    </footer>
+
+    <script src="script/oc.js"></script>
+</body>
+</html>
