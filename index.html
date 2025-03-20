@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{Title}</title>
+  <title>moonlight</title>
   
   <!-- Google Fonts -->
   <!-- 구글 폰트-->
@@ -21,109 +21,105 @@
 <!-- Nanum Myeongjo (공지 내용) -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap">
 
-<link rel="stylesheet" href="https://narelim.github.io/mainstyle.css">
-
+<!--메인스타일불러오기-->
+<link rel="stylesheet" href="styles/mainstyle.css">
 </head>
 <body>
-  <!-- 헤더 -->
-  <header>
-    <nav class="header-menu">
-      <a href="/">🏠 홈</a>
-      <a href="/categories/notice/">📌 공지</a>
-      <a href="/categories/test/">📂 test</a>
-      <a href="/categories/info/">📂 info</a>
-      <a href="#" id="darkModeToggle" class="dark-toggle-btn">🌙 / ☀️</a>
-    </nav>
-  </header>
-
-    <!-- 왼쪽 사이드바 -->
-  <div class="sidebar">
-  <aside class="sidebar">
-  <div class="profile-container">
-     <!-- 프로필 사진 -->
-    <div class="profile-pic">
-      <img src="https://cdn.discordapp.com/attachments/1351547047890649131/1351604829356687431/e726504c7af76feb.png?ex=67dafb96&is=67d9aa16&hm=72c97793c969a1acaf90083d833d200eb373d247bab89fbfde78b45c6313ade8&" alt="프로필 사진">
-    </div>
-    <div class="blog-name">
-      <h2>나레</h2>
+     <!-- 공통 헤더 -->
+     <header>
+      <div class="header-container">
+          <a href="index.html" class="logo">✧ moonlight ✧</a>
       </div>
-      <div class="blog-twitter">
-      <p>@SOl02_R</p>
-      </div>
-      <div class="intro-card">
-      <p class="blog-intro">
-      다용도 홈페이지 제작 중
-    </div>
-  </div>
-
-
-    <!-- 메뉴 타이틀 & 리스트 -->
-    <div class="menu-title">menu</div>
-     <nav class="sidebar-menu">
-    <ul>
-      <li><a href="/categories/notice/">Notice</a></li>
-      <li><a href="/categories/test/">Test</a></li>
-      <li><a href="/categories/info/">Info</a></li>
-    </ul>
+      <img src="assets/images/header.jpg" alt="헤더 이미지" class="header-image">
+      <nav class="menu-bar">
+          <ul>
+              <li><a href="index.html">♥</a></li>
+              <li><a href="notice.html">Notice</a></li>
+              <li><a href="oc.html" onclick="switchCategory('oc')">OC</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="dnd.html" onclick="switchCategory('dnd')">DnD</a></li>
+          </ul>
       </nav>
-  </div>
 
-  <!-- 메인 컨텐츠 -->
-  <main>
-    <!-- 공지 박스 -->
-    <div class="notice-box">
-      <h2>Notice</h2>
-      <h3>Under the Moonlig</h3>
-      
-      <!-- 공지 이미지 (샘플) -->
-      <div class="notice-img">
-        <!-- <img src="공지이미지_URL" alt="공지 이미지"> -->
+      <div class="container">
+        <!-- 공통 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="assets/images/profile.jpg" alt="프로필 이미지">
+                <h3>나레</h3>
+                <p>다용도 블로그 제작중</p>
+            </div>
+            <div class="category">
+              <h4>Category</h4>
+              <ul class="category">
+                  <!-- OC 선택 시 표시될 목록 -->
+                  <div id="oc-categories">
+                      <li class="category-item" onclick="toggleCategory('adeline')">
+                          <span id="adeline-title">Adeline Ross</span>
+                          <ul id="adeline-sub" class="subcategory">
+                              <li onclick="selectSubcategory('home', 'adeline')"><span id="adeline-home">♡ 🍷</span></li>
+                              <li onclick="selectSubcategory('info', 'adeline')"><span id="adeline-info">♡ Information</span></li>
+                              <li onclick="selectSubcategory('fiction', 'adeline')"><span id="adeline-fitcion">♡ Fiction</span></li>
+                              <li onclick="selectSubcategory('picture', 'adeline')"><span id="adeline-picture">♡ Picture</span></li>
+                              <li onclick="selectSubcategory('tea', 'adeline')"><span id="adeline-tea">♡ Black rose</span></li>
+                              <li onclick="selectSubcategory('cm', 'adeline')"><span id="adeline-cm">♡ CM</span></li>
+                              <li onclick="selectSubcategory('trpg', 'adeline')"><span id="adeline-trpg">♡ TRPG</span></li>
+                              <li onclick="selectSubcategory('relation', 'adeline')"><span id="adeline-relation">♡ Relationship</span></li>
+                          </ul>
+                      </li>
+              
+                      <li class="category-item" onclick="toggleCategory('vanessa')">
+                          <span id="vanessa-title">Vanessa White</span>
+                          <ul id="vanessa-sub" class="subcategory">
+                            <li onclick="selectSubcategory('home', 'vanessa')"><span id="vanessa-home">♡ 🦋</span></li>
+                            <li onclick="selectSubcategory('info', 'vanessa')"><span id="vanessa-info">♡ Information</span></li>
+                            <li onclick="selectSubcategory('fiction', 'vanessa')"><span id="vanessa-fitcion">♡ Fiction</span></li>
+                            <li onclick="selectSubcategory('picture', 'vanessa')"><span id="vanessa-picture">♡ Picture</span></li>
+                            <li onclick="selectSubcategory('tea', 'vanessa')"><span id="vanessa-tea">♡ Butterfly pea</span></li>
+                            <li onclick="selectSubcategory('cm', 'vanessa')"><span id="vanessa-cm">♡ CM</span></li>
+                            <li onclick="selectSubcategory('trpg', 'vanessa')"><span id="vanessa-trpg">♡ TRPG</span></li>
+                            <li onclick="selectSubcategory('relation', 'vanessa')"><span id="vanessa-relation">♡ Relationship</span></li>
+                          </ul>
+                      </li>
+              
+                      <li class="category-item" onclick="toggleCategory('kalina')">
+                          <span id="kalina-title">Kalina Heloise</span>
+                          <ul id="kalina-sub" class="subcategory">
+                            <li onclick="selectSubcategory('home', 'kalina')"><span id="kalina-home">♡ 🎙</span></li>
+                            <li onclick="selectSubcategory('info', 'kalina')"><span id="kalina-info">♡ Information</span></li>
+                            <li onclick="selectSubcategory('fiction', 'kalina')"><span id="kalina-fitcion">♡ Fiction</span></li>
+                            <li onclick="selectSubcategory('picture', 'kalina')"><span id="kalina-picture">♡ Picture</span></li>
+                            <li onclick="selectSubcategory('tea', 'kalina')"><span id="kalina-tea">♡ Fleur de Jasmin</span></li>
+                            <li onclick="selectSubcategory('cm', 'kalina')"><span id="kalina-cm">♡ CM</span></li>
+                            <li onclick="selectSubcategory('trpg', 'kalina')"><span id="kalina-trpg">♡ TRPG</span></li>
+                            <li onclick="selectSubcategory('relation', 'kalina')"><span id="kalina-relation">♡ Relationship</span></li>
+                          </ul>
+                      </li>
+                  </div>
+              
+                  <!-- DnD 선택 시 표시될 목록 -->
+                  <div id="dnd-categories" style="display: none;">
+                      <li onclick="selectSubcategory('session')"><span id="dnd-session">♡ Session Backup</span></li>
+                      <li onclick="selectSubcategory('sheet')"><span id="dnd-sheet">♡ Players</span></li>
+                      <li onclick="selectSubcategory('schedule')"><span id="dnd-schedule">♡ Schedule</span></li>
+                      <li onclick="selectSubcategory('dm-note')"><span id="dnd-dmnote">♡ DM Note</span></li>
+                  </div>
+              </ul>
+            </div>
+        </aside>
+
+        <!-- 본문 -->
+        <main class="content">
+            <h1>Welcome to My Blog</h1>
+            <p>여기에 최신 글 목록이 들어갑니다.</p>
+        </main>
       </div>
-      
-      <!-- "자세히 보기" 버튼 -->
-      <a href="{Permalink}" class="notice-btn">자세히 보기</a>
-    </div>
-  </main>
 
-  <!-- 스크립트 -->
-  <script>
-    // 다크모드 토글
-    const darkModeBtn = document.getElementById("darkModeToggle");
-    darkModeBtn.addEventListener("click", function(e) {
-      e.preventDefault();
-      document.body.classList.toggle("dark-mode");
-    });
+       <!-- 공통 푸터 -->
+    <footer>
+      <p>© 2024 My Blog | All rights reserved.</p>
+  </footer>
 
-    // AJAX로 본문만 불러오기 (SPA-like)
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll(".header-menu a:not(#darkModeToggle)");
-
-      links.forEach(link => {
-        link.addEventListener("click", function (event) {
-          event.preventDefault(); // 기본 이동 막기
-          const url = this.getAttribute("href");
-
-          // AJAX로 본문만 불러오기
-          fetch(url)
-            .then(response => response.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const doc = parser.parseFromString(html, "text/html");
-
-              // 📌 페이지의 <main> 태그만 가져오기
-              const newContent = doc.querySelector("main");
-
-              if (newContent) {
-                document.querySelector("main").innerHTML = newContent.innerHTML;
-                history.pushState(null, "", url);
-              } else {
-                console.error("페이지에 <main> 태그가 없습니다!");
-              }
-            })
-            .catch(error => console.error("페이지를 불러오는 중 오류 발생!", error));
-        });
-      });
-    });
-  </script>
+  <script src="scripts/sidebar.js"></script>
 </body>
 </html>
