@@ -27,11 +27,15 @@
 </head>
 
 <body>
-{% include header.html %}
-  
-{% include sidecontainer.html %}
 
-{% include tab.html %}
-</body>
+  ---
+  layout: default
+  ---
 
-</html>
+  {% include header.html %}
+    
+  {% include sidecontainer.html %}
+
+  {% include tab.html %}
+  </body>
+  </html>
