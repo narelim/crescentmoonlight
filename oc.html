@@ -28,8 +28,16 @@
   ---
   layout: default
   ---
-    {% include header.html %}
-    {% include sidecontainer.html %}
+  {%- include header.html -%}
+  
+  <div class="container">
+    <!-- 공통 사이드바 -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images/home/profile.png" alt="프로필 이미지" class="profile-img">
+            <h3>나레</h3>
+            <p>다용도 블로그 제작중</p>
+        </div>
       
          <!-- ✅ 카테고리가 있을 때만 보이도록 감싸기 -->
           <div class="category-container" style="display: none;">
@@ -197,7 +205,8 @@
                   </div>
         </aside>
 
-        {% include tab.html %}
+  </div>
+        {%- include tab.html -%}
 
       <!-- 본문 -->
     <main class="content">
