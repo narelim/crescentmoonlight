@@ -18,29 +18,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
 <!-- Black Han Sans (공지 타이틀) -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
-<!-- Nanum Myeongjo (공지 내용) -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap">
+ <!-- Nanum Myeongjo (공지 내용) -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 
-<link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/notice.css">
 </head>
 <body>
-     <!-- 공통 헤더 -->
-     <header>
-      <div class="header-container">
-          <a href="index.html" class="logo">✧ moonlight ✧</a>
-      </div>
-      <h1>My Original Characters</h1>
-      <img src="assets/images/home/header.png" alt="헤더 이미지" class="header-image">
-      <nav class="menu-bar">
-          <ul>
-              <li><a href="index.html">♥</a></li>
-              <li><a href="notice.html">Notice</a></li>
-              <li><a href="oc.html" onclick="switchCategory('oc')">OC</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="dnd.html" onclick="switchCategory('dnd')">DnD</a></li>
-          </ul>
-      </nav>
-     </header>
+    {% include header.html %}
+  
+    {% include sidecontainer.html %}
+  
+    {% include tab.html %}
+
      <main class="content">
     <h1>Notice</h1>
     <ul class="notice-list">
@@ -50,13 +40,13 @@
         <div id="notice2" class="notice-content">공지 내용 2</div>
     </ul>
 </main>
-</body>
+
 <!-- 푸터 -->
 <footer>
-   <p>© 2024 Moonlight | All rights reserved.</p>
+    <div class="logo-icon"></div>
+    <p>© 2025 Crescent Moonlight | All rights reserved.</p>
 </footer>
 
-<script src="script/notice.js"></script>
+<script src="script/notice.js"></script>  
 </body>
 </html>
-

@@ -21,47 +21,17 @@
  <!-- Nanum Myeongjo (공지 내용) -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 
-<!--메인스타일불러오기-->
-<link rel="stylesheet" href="styles/common.css">
-<link rel="stylesheet" href="styles/mainstyle.css">
+ <link rel="stylesheet" href="styles/common.css">
+ <link rel="stylesheet" href="styles/info.css">
+
 </head>
+
 <body>
-  {% include header.html %}
+{% include header.html %}
   
-  {% include sidecontainer.html %}
+{% include sidecontainer.html %}
 
-  {% include tab.html %}
-
-        
-        <!-- 본문 -->
-        <main class="content">
-          <div class="hero">
-              <img src="assets/images/home/main.png" alt="메인 이미지">
-              <h1>Welcome to My Blog</h1>
-          </div>
-
-            <section class="main-notice">
-              <h2>Notice</h2>
-              <p>새로운 업데이트가 있습니다! 확인해 주세요.</p>
-          </section>
-
-          <section class="latest-posts">
-            <h2>Latest post</h2>
-            <div class="post-list">
-                <div class="post-card">📜 공지 1</div>
-                <div class="post-card">📜 공지 2</div>
-                <div class="post-card">📜 공지 3</div>
-            </div>
-        </section>
-        </main>
-      </div>
-
-       <!-- 공통 푸터 -->
-    <footer>
-      <div class="logo-icon"></div>
-      <p>© 2025 Crescent Moonlight | All rights reserved.</p>
-  </footer>
-
-  <script src="scripts/sidebar.js"></script>
+{% include tab.html %}
 </body>
+
 </html>
