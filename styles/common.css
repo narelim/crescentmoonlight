@@ -22,17 +22,16 @@
     .header-container {
       width: 100%;
       background: #fff9ef;
-      padding: 10px;
       text-align: center;
       z-index: 1000;
       position:relative;
-      padding-bottom: 10px;
     }
     
         /* 로고 이미지 */
     .shortlogo-img {
       width: 180px;
       height: auto;
+      top: 20px; /* 위에서의 간격 */
       position: relative;
       margin: 0 auto;
       display: block;
@@ -42,9 +41,8 @@
     }
 
     .header-img{
-      width: 100%;
-      max-height: 250px; /* 원하는 고정 높이 */
-      top: -65px;
+      width: 80%;
+      max-height: 280px; /* 원하는 고정 높이 */
       display: block;
       margin: 0 auto;
       z-index: 1;
