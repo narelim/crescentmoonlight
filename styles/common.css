@@ -18,20 +18,31 @@
         font-family: "Nanum Myeongjo", serif;
     }  
 
-      /* 헤더 */
-      .header-container {
-        position: fixed;
-        width: 100%;
-        background: #fff9ef;
-        padding: 10px;
-        text-align: center;
-        z-index: 1000;
+    /* 헤더 */
+    .header-container {
+      width: 100%;
+      background: #fff9ef;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
     }
 
     .header-container img {
       width: 100%;
       height: auto;
       display: block;
+    }
+    
+    .mainlogo-container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: -30px; /* 헤더 이미지랑 간격 조정 */
+    }
+    
+    .mainlogo-img {
+      width: 200px;
+      height: auto;
     }
 
     /* 메인 레이아웃 */
@@ -41,7 +52,6 @@
       align-items: flex-start;
       max-width: 1200px;
       width: 100%;
-      margin-top: 20px;
       gap: 40px;
       box-sizing: border-box;
       padding: 0 40px;
