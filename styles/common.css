@@ -131,11 +131,11 @@
         border-radius: 14px 140px 0 0;
         margin: 0 5px;
         z-index: 1;
-        font-family: 'Quinsi';
+        font-family: 'Quinsi',serif;
+        font-size: 16px;
         border: none;
         display: flex;
         cursor: pointer;
-        color: #55456a;
         position: relative;
     }
 
@@ -149,17 +149,18 @@
     }
 
     .tab .tab-label {
-        font-size: 16px;
+        color: #55456a;
+        font-weight: normal;
+        z-index: 1;
         line-height: 1;
     }
 
     /* 활성화된 탭 */
     .tab.active{
         background: #D8AAAD;
-        font-family: 'Quinsi', serif;
         font-weight: bold;
         z-index: 5;
-        color: white;
+        color: #FFFFFF;
     }
 
     /* 콘텐츠 박스 (게시판) */
@@ -278,9 +279,6 @@
   
   .tab-label{
     font-family: 'Quinsi', serif;
-      font-size: 14px;
-      z-index: 1;
-      color: white;
   }
   
   
@@ -371,7 +369,8 @@
   
   /* 로고 아이콘 */
   .logo-icon {
-    position: absolute;
+    position: relative;
+    text-align: center;
     top: 80px;
     right: 30px;
     width: 50px;
