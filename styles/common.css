@@ -22,12 +22,14 @@
 
     /* 페이지 전체 레이아웃 정리 */
     .wrapper {
-    display: flex;
-    flex: 1; /* 본문과 사이드바를 감싸는 컨테이너 */
-    margin-top: 70px; /* 헤더 높이만큼 본문을 아래로 내림 */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 160px; /* 헤더 높이 고려 */
     }
 
-    
     
     /* 헤더 */
     .header {
@@ -119,6 +121,7 @@
         gap: 12px;
         max-width: 900px;
         width: 100%;
+        margin-bottom: -30px;
     }
 
     .tab {
@@ -140,9 +143,9 @@
     }
 
     .tab .star-icon-cat {
-      width: 20px;
-      height: 20px;
-      background-image: url('/assets/images/home/blog_element_03.png');
+      width: 24px;
+      height: 24px;
+      background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -157,6 +160,7 @@
         font-weight: bold;
         z-index: 5;
         color: #FFFFFF;
+        margin-bottom: -3px;
     }
 
     /* 콘텐츠 박스 (게시판) */
