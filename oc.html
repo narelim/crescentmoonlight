@@ -30,7 +30,7 @@ title: OC
 <body>
   {%- include header.html -%}
   
-  
+  <div class="wrapper">
   <div class="container">
     <!-- 공통 사이드바 -->
     <aside class="sidebar">
@@ -205,19 +205,20 @@ title: OC
                     </li>
                   </div>
         </aside>
-
+      </div>
   </div>
-        {%- include tab.html -%}
+  <div class="container">
+    
+    {%- include tab.html -%}
 
-        <section class="content-box">
-      <!-- 본문 -->
-    <main class="content">
+       <!-- 콘텐츠 박스 -->
+    <section class="content-box">
         <div class="title">Original Characters</div>
         <div class="star-line"></div>
-        <button class="custom-button adeline">Adeline</button>
-    </main>
 
+        <button class="custom-button adeline"></button>
         </section>
+  </div>
     <!-- 푸터 -->
     <footer>
         <div class="logo-icon"></div>

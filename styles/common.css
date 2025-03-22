@@ -8,8 +8,6 @@
     body {
         font-family: "TrajanPro", serif;
         background: #fff9ef;
-        margin: 0;
-        padding: 0;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -20,39 +18,8 @@
         font-family: "Nanum Myeongjo", serif;
     }  
 
-    /* 페이지 전체 레이아웃 정리 */
-    .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      margin-top: 160px; /* 헤더 높이 고려 */
-    }
-
-    
-    /* 헤더 */
-    .header {
-        text-align: center;
-        font-size: 24px;
-        padding: 20px;
-    }
-
-    /* 페이지 컨테이너 */
-    .container {
-        width: 100%;
-        max-width: 1200px; /* 콘텐츠 너비 제한 */
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
-        padding: 0 40px;
-        box-sizing: border-box;
-        flex: 1;
-    }
-
-    /* 헤더 */
-    .header-container {
+      /* 헤더 */
+      .header-container {
         position: fixed;
         width: 100%;
         background: #fff9ef;
@@ -60,18 +27,34 @@
         text-align: center;
         z-index: 1000;
     }
-    
+
+    .header-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 메인 레이아웃 */
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 20px;
+      gap: 40px;
+      box-sizing: border-box;
+      padding: 0 40px;
+    }
+
     /* 사이드바 */
     .sidebar {
-        width: 250px;
-        background: #fff9ef;
-        padding: 20px;
-        border-radius: 10px;
-        border-radius: 10px;
-        flex-shrink: 0;
-        text-align: center;
+      width: 250px;
+      background: #fff9ef;
+      padding: 20px;
+      text-align: center;
+      flex-shrink: 0;
       position: relative;
-      top: 0;
     }
 
     /* 사이드바 프로필 스타일 */
@@ -88,6 +71,16 @@
     object-fit: cover; /* 이미지를 원형 안에 꽉 차게 맞춤 */
     border: 3px solid #C89FA5; /* 원하는 테두리 색상 */
     }
+
+    
+    /* 헤더 */
+    .header {
+        align-items: center; /* 중앙 정렬 */
+        text-align: center;
+        font-size: 24px;
+        padding: 20px;
+    }   
+    
 
     /* 본문 */
     .content {
@@ -110,36 +103,39 @@
     margin-top: 40px;
     margin-bottom: -30px;
     z-index: 3;
-    padding: 0 40px;
     position: relative;
   }
 
     /* 탭 메뉴 */
     .tab-menu {
         display: flex;
-        justify-content: center;
         gap: 12px;
         max-width: 900px;
         width: 100%;
-        margin-bottom: -30px;
+        justify-content: center;
     }
 
     .tab {
         width: 100px;
         height: 90px;
-        text-align: center;
-        flex-direction: column; /* 위아래 정렬 */
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background: #C89FA5; 
-        padding: 10px 0;
-        border-radius: 14px 140px 0 0;
-        z-index: 1;
-        font-family: 'Quinsi',serif;
+        background: #C89FA5;
+        border-radius: 14px 14px 0 0;
+        font-family: 'Quinsi', serif;
         font-size: 14px;
-        display: flex;
+        color: #55456a;
         position: relative;
-        font-weight: normal;
+        z-index: 1;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+
+    .tab .tab-label {
+      margin-bottom: 4px;
+      font-weight: normal;
     }
 
     .tab .star-icon-cat {
@@ -148,10 +144,6 @@
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
-    }
-
-    .tab .tab-label {
-      margin-bottom: 4px;
     }
 
     /* 활성화된 탭 */
@@ -165,29 +157,25 @@
 
     /* 콘텐츠 박스 (게시판) */
     .content-box {
-      width: 100%;
-      border: 3px solid #D8AAAD; /* 활성 탭과 맞춤 */
-      flex-grow: 1;
+      border: 3px solid #D8AAAD;
       background: #fff;
       padding: 50px 60px;
-      margin-top: -30px; /* 탭 아래로 살짝 겹치게 */
       max-width: 900px;
-      position: relative;
+      width: 100%;
+      margin-top: -30px;
       z-index: 2;
-      margin-left: 40px;
-      margin-right: 40px;
-      /* 또는 max-width로 가운데 정렬 */
+      box-sizing: border-box;
+      text-align: center;
     }
  
  /* 푸터 */
   footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
     background: #D8AAAD;
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100%;
+    margin-top: auto;
   }
 
 /*꾸밈요소들*/
@@ -248,7 +236,7 @@
 
   a {
     text-decoration: none;
-    color: inherit; /* 링크 색상도 버튼 색상 따르게 */
+    color: inherit;
   }
   
   .category-title {
