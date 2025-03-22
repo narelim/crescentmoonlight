@@ -150,11 +150,11 @@
     }
 
     .tab {
-        width: 10%;
-        height: 10%;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         background: #C89FA5;
         border-radius: 14px 14px 14px 14px;
@@ -184,16 +184,11 @@
 
     /* 활성화된 탭 */
     .tab.active{
-        width: 80%;
-        height: auto;
-        background-image: url('/assets/images/home/blog_element_03_01.png');
-        background-size: contain;
-        background-repeat: no-repeat;
         background: #D8AAAD;
         font-weight: bold;
         z-index: 5;
         color: #FFFFFF;
-        padding-bottom: 20%;
+        padding-top: -40%;
     }
 
     /* 콘텐츠 박스 (게시판) */
@@ -201,7 +196,7 @@
       border: 3px solid #D8AAAD;
       background: #fff;
       padding: 50px 60px;
-      max-width: 900px;
+      max-width: 900;
       width: 100%;
       margin-top: -30px;
       z-index: 2;
@@ -310,6 +305,11 @@
     font-family: 'Quinsi', serif;
     font-size: 30px;
   }
+  .tab-label{
+    font-family: 'Quinsi', serif;
+    font-size: 30px;
+  }
+  
   
   
   /*엘레먼트*/
