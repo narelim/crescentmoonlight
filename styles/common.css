@@ -179,7 +179,7 @@
       position: relative;
       z-index: -1;
       padding-top: 8px;
-      margin-top: 30px;       /* 기본은 내려가 있음 */
+      margin-top: 40px;       /* 기본은 내려가 있음 */
       transition: all 0.3s ease;
       overflow: hidden;
     }
@@ -226,7 +226,7 @@
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
-      z-index: 1;  /* 탭보다 아래로 */
+      z-index: 4;  /* 탭보다 아래로 */
       box-sizing: border-box;
       text-align: center;
     }
