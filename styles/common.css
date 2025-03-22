@@ -35,26 +35,26 @@
     }
     
    /* 로고 영역 */
-      .logo-area {
-        display: flex;
-        margin-bottom: 40px; /* 헤더 이미지와 겹치게 조정 */
-        z-index: 20; /* 헤더 이미지보다 위에 보이게 */
-        justify-content: center;
-      }
+    .logo-area {
+      display: flex;
+      margin-bottom: 10px; /* 헤더 이미지와 겹치게 조정 */
+      z-index: 20; /* 헤더 이미지보다 위에 보이게 */
+      justify-content: center;
+    }
     
-    .logo-logo {
+    .logo-img {
       width: 150px;
       height: auto;
       display: block;
     }
     
-     /* 헤더 이미지 영역 */
-      .header-area {
-        width: 100%;
-        max-width: 1200px;
-        margin-top: 60px;
-        justify-content: center;
-      }
+    /* 헤더 이미지 영역 */
+    .header-area {
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 60px;
+      justify-content: center;
+    }
 
     .header-image {
       width: 100%;
