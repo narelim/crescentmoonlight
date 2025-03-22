@@ -32,10 +32,10 @@
       width: 180px;
       height: auto;
       top: 20px; /* 위에서의 간격 */
-      position: relative;
+      left: 30px;  /* 왼쪽에서 얼마나 떨어질지 */
+      position: absolute;
       margin: 0 auto;
       display: block;
-      position: relative;
       z-index: 2;
       margin-bottom: -20px; /* 로고와 헤더 사이 간격 조정 */
     }
@@ -44,6 +44,7 @@
       width: 80%;
       max-height: 280px; /* 원하는 고정 높이 */
       display: block;
+      object-fit: cover;
       margin: 0 auto;
       z-index: 1;
     }
