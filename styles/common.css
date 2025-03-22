@@ -34,7 +34,7 @@
       text-align: center;
     }
     
-    .shortlogo-img-container {
+    .header-container.shortlogo-img{
       position: relative;
       width: 25%;
       z-index: 2;
