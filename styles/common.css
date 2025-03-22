@@ -155,7 +155,7 @@
       display: flex;
       justify-content: flex-start; /* 왼쪽부터 정렬 */
       gap: 10px;
-      max-width: 80px;
+      max-width: 80%;
     }
 
     .tab {
