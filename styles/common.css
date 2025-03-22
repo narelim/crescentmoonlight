@@ -153,10 +153,9 @@
     /* 탭 메뉴 */
     .tab-menu {
       display: flex;
-      justify-content: center;
-      gap: 16px;
-      max-width: 900px;
-      width: 100%;
+      justify-content: flex-start; /* 왼쪽부터 정렬 */
+      gap: 10px;
+      max-width: 80px;
     }
 
     .tab {
@@ -172,9 +171,11 @@
       font-family: 'Quinsi', serif;
       font-size: 18px;
       color: #55456a;
+      cursor: pointer;
       position: relative;
       z-index: 1;
-      margin-bottom: -3px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
+      margin-bottom: -40px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
+      transition: all 0.2s ease;
     }
 
     .tab .tab-label {
@@ -217,6 +218,7 @@
       z-index: 2;
       box-sizing: border-box;
       text-align: center;
+      position: relative;
     }
  
  /* 푸터 */
