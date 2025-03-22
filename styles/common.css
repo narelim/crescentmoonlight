@@ -48,6 +48,10 @@
       height: auto;
       display: block;
     }
+
+    .logo-link {
+      display: inline-block;
+    }
     
     /* 헤더 이미지 영역 */
     .header-area {
@@ -129,19 +133,19 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: -30px;
-    z-index: 3;
+    z-index: 1;
     position: relative;
   }
 
     /* 탭 메뉴 */
     .tab-menu {
         display: flex;
-        gap: 12px;
+        gap: 6x;
         max-width: 900px;
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .tab {
@@ -150,26 +154,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         background: #C89FA5;
-        border-radius: 14px 14px 0 0;
+        border-radius: 14px 14px 14px 14px;
         font-family: 'Quinsi', serif;
-        font-size: 14px;
+        font-size: 20px;
         color: #55456a;
         position: relative;
         z-index: 1;
-        padding-top: 10px;
+        padding-top: 0px;
         cursor: pointer;
     }
 
     .tab .tab-label {
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       font-weight: normal;
     }
 
     .tab .star-icon-cat {
-      width: 24px;
-      height: 24px;
+      width: 50%;
+      height: auto;
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
