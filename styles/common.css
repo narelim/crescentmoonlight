@@ -145,25 +145,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    z-index: 1;
+    z-index: 5;
     position: relative;
+    margin-bottom: -30px;  /* 겹치도록 */
   }
 
     /* 탭 메뉴 */
     .tab-menu {
       display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      max-width: 880px;
+      justify-content: center;
+      gap: 16px;
+      max-width: 1000px;
       width: 100%;
-      margin: 0 auto;
     }
 
     .tab {
-      flex: 1;
-      max-width: 120px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -172,25 +170,27 @@
       background: #C89FA5;
       border-radius: 14px 14px 14px 14px;
       font-family: 'Quinsi', serif;
-      font-size: 16px;
-      padding: 8px;
+      font-size: 18px;
       color: #55456a;
-      cursor: pointer;
       position: relative;
+      z-index: 1;
+      margin-bottom: -3px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
     }
 
     .tab .tab-label {
-      margin-bottom: 6px;
-      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 4px;
+      font-size: 18px;
     }
 
     .tab .star-icon-cat {
       display: none;
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
+      margin-top: 4px;
     }
 
     .tab.active .star-icon-cat {
@@ -202,19 +202,21 @@
         background: #D8AAAD;
         color: white;
         font-weight: bold;
-        z-index: 2;
+        z-index: 10; /* 활성 탭만 위로 */
+        margin-bottom: 0; /* 게시판 위에 딱 맞게 */
     }
 
     /* 콘텐츠 박스 (게시판) */
     .content-box {
       border: 3px solid #D8AAAD;
       background: #fff;
-      padding: 50px 60px;
-      max-width: 880px; /* 더 넓게! */
+      padding: 60px;
+      max-width: 1000px;
       width: 100%;
       margin-top: -30px;
       z-index: 2;
       box-sizing: border-box;
+      text-align: center;
     }
  
  /* 푸터 */
