@@ -28,13 +28,15 @@
     }
 
     .header-container img {
-      width: 25%;
+      width: 100%;
       height: auto;
       display: block;
+      text-align: center;
     }
     
     .shortlogo-img-container {
       position: relative;
+      width: 25%;
       z-index: 2;
       text-align: center;
       margin-bottom: -30px; /* 헤더 이미지랑 간격 조정 */
