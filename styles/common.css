@@ -145,9 +145,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    max-width: 900px;
+    position: absolute;  /* 🔥 중요: 게시판 위에 올려줌 */
+    top: -45px;           /* 원하는 만큼 겹쳐서 내려오게 조절 */
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 5;
-    position: relative;
-    margin-bottom: -30px;  /* 겹치도록 */
   }
 
     /* 탭 메뉴 */
@@ -174,52 +178,57 @@
       cursor: pointer;
       position: relative;
       z-index: -1;
-      margin-top: 40px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
-      transition: margin-top 0.3s, z-index 0.3s;
+      padding-top: 8px;
+      margin-top: 30px;       /* 기본은 내려가 있음 */
+      transition: all 0.3s ease;
+      overflow: hidden;
     }
+
+    /* 활성화된 탭 */
+    .tab.active{
+      background: #D8AAAD;
+      color: white;
+      font-weight: bold;
+      margin-top: 0px;        /* 올라와 있음 */
+      z-index: 10;            /* 가장 위로 */
+     }
 
     .tab .tab-label {
       margin-top: 4;
       font-weight: normal;
+      align-self: flex-start;
       margin-bottom: 4px;
       font-size: 18px;
     }
 
     .tab .star-icon-cat {
+      position: absolute;
       display: none;
       width: 35px;
       height: 35px;
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
+      bottom: 8px;
     }
 
     .tab .active .star-icon-cat {
       display: block;
     }
-
-    /* 활성화된 탭 */
-    .tab.active{
-        background: #D8AAAD;
-        color: white;
-        font-weight: bold;
-        z-index: 10; /* 활성 탭만 위로 */
-        margin-bottom: 0px; /* 게시판 위에 딱 맞게 */
-        margin-top: 0; /* 활성화된 탭은 올라와있음 */
-    }
+ 
 
     /* 콘텐츠 박스 (게시판) */
     .content-box {
+      position: relative;
       border: 3px solid #D8AAAD;
       background: #fff;
       padding: 60px;
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
-      z-index: 4;
+      z-index: 1;  /* 탭보다 아래로 */
       box-sizing: border-box;
       text-align: center;
-      position: relative;
     }
  
  /* 푸터 */
