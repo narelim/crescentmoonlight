@@ -186,12 +186,11 @@
 
     .tab .star-icon-cat {
       display: none;
-      width: 24px;
-      height: 24px;
+      width: 35px;
+      height: 35px;
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
-      margin-top: 4px;
     }
 
     .tab.active .star-icon-cat {
@@ -215,7 +214,7 @@
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
-      z-index: 2;
+      z-index: 4;
       box-sizing: border-box;
       text-align: center;
       position: relative;
