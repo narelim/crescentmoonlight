@@ -174,12 +174,12 @@
       cursor: pointer;
       position: relative;
       z-index: -1;
-      margin-bottom: -50px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
-      transition: all 0.2s ease;
+      margin-top: 40px; /* 아래쪽으로 눌려서 게시판 뒤에 들어가게 */
+      transition: margin-top 0.3s, z-index 0.3s;
     }
 
     .tab .tab-label {
-      margin-top: -20;
+      margin-top: 4;
       font-weight: normal;
       margin-bottom: 4px;
       font-size: 18px;
@@ -205,6 +205,7 @@
         font-weight: bold;
         z-index: 10; /* 활성 탭만 위로 */
         margin-bottom: 0px; /* 게시판 위에 딱 맞게 */
+        margin-top: 0; /* 활성화된 탭은 올라와있음 */
     }
 
     /* 콘텐츠 박스 (게시판) */
