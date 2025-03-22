@@ -1,7 +1,6 @@
     /* 공통 레이아웃 */
     html, body{
       overflow-x: hidden;   /* 가로 스크롤 제거 */
-      overflow-y: auto;     /* 세로 스크롤은 자동으로 */
       width: 100%;
       margin: 0;
       padding: 0;
@@ -33,6 +32,7 @@
       margin-bottom: -40px; /* 헤더랑 겹치지 않게 간격 조절 */
       z-index: 5;
       align-items: center; /* 중앙 정렬 */
+      justify-content: center; /* 전체 헤더를 중앙 정렬 */
     }
     
 
@@ -50,6 +50,7 @@
         background: #fff9ef;
         z-index: 1;
         align-items: center; /* 중앙 정렬 */
+        justify-content: center; /* 전체 헤더를 중앙 정렬 */
       }
 
     .header-img{
