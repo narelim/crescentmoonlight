@@ -25,26 +25,24 @@
       padding: 10px;
       text-align: center;
       z-index: 1000;
+      position:relative;
     }
 
-    .header-container img {
+    .header-img{
       width: 100%;
       height: auto;
       display: block;
-      text-align: center;
     }
     
-    .header-container.shortlogo-img{
-      position: relative;
-      width: 25%;
-      z-index: 2;
-      text-align: center;
-      margin-bottom: -30px; /* 헤더 이미지랑 간격 조정 */
-    }
-    
-    .shortlogo-img-img {
+        /* 로고 이미지 */
+    .shortlogo-img {
       width: 200px;
       height: auto;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
     }
 
     /* 메인 레이아웃 */
