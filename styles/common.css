@@ -28,19 +28,19 @@
     }
 
     .header-container img {
-      width: 100%;
+      width: 25%;
       height: auto;
       display: block;
     }
     
-    .logo-icon-container {
+    .shortlogo-img-container {
       position: relative;
       z-index: 2;
       text-align: center;
       margin-bottom: -30px; /* 헤더 이미지랑 간격 조정 */
     }
     
-    .logo-icon-img {
+    .shortlogo-img-img {
       width: 200px;
       height: auto;
     }
@@ -394,8 +394,7 @@
   /* 짧은 로고 */
   .shortlogo-img {
     position: absolute;
-    top: 80px;
-    right: 30px;
+    top: 20px;
     width: 50px;
     height: 50px;
     background-image: url('/assets/images/home/blog_logo_short.png');
