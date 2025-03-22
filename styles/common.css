@@ -28,14 +28,16 @@
     
 
         /* 로고 이미지 */
-    .shortlogo-img {
+      .shortlogo-img {
       width: 130px;
       height: auto;
-          }
+      }
 
       /* 헤더 */
       .header-container {
         width: 100%;
+        margin-top: 60px; /* 원하는 만큼 아래로 */
+        text-align: center;
         background: #fff9ef;
         z-index: 11;
       }
