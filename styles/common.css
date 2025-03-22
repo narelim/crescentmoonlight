@@ -39,11 +39,11 @@
       display: flex;
       margin-bottom: 10px; /* 헤더 이미지와 겹치게 조정 */
       z-index: 20; /* 헤더 이미지보다 위에 보이게 */
-      justify-content: center;
+      justify-content: flex-start;
     }
     
     .logo-img {
-      width: 150px;
+      width: 200px;
       height: auto;
       display: block;
     }
@@ -52,7 +52,7 @@
     .header-area {
       width: 100%;
       max-width: 1200px;
-      margin-top: 60px;
+      margin-top: 30px;
       justify-content: center;
     }
 
