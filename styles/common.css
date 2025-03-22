@@ -40,6 +40,7 @@
       margin-bottom: 10px; /* 헤더 이미지와 겹치게 조정 */
       z-index: 20; /* 헤더 이미지보다 위에 보이게 */
       justify-content: flex-start;
+      align-items:center;
     }
     
     .logo-img {
@@ -52,7 +53,7 @@
     .header-area {
       width: 100%;
       max-width: 1200px;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
