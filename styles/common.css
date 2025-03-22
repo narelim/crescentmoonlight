@@ -1,7 +1,8 @@
     /* 공통 레이아웃 */
     html, body{
       overflow-x: hidden;   /* 가로 스크롤 제거 */
-      width: 100%;
+      overflow-y: auto;       /* 세로 스크롤만 허용 */
+      height: 100%;
       margin: 0;
       padding: 0;
     }
@@ -27,6 +28,7 @@
 
     .logo-wrapper {
       width: 100%;
+      position: relative;
       text-align: center;
       margin-top: 30px; /* 원하는 만큼 아래로 */
       margin-bottom: -40px; /* 헤더랑 겹치지 않게 간격 조절 */
@@ -44,6 +46,7 @@
 
       /* 헤더 */
       .header-container {
+        position: relative;
         width: 100%;
         margin-top: 100px; /* 원하는 만큼 아래로 */
         text-align: center;
