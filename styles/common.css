@@ -30,13 +30,14 @@
 
     .header-img{
       width: 100%;
+      top: -65px;
       height: auto;
       display: block;
     }
     
         /* 로고 이미지 */
     .shortlogo-img {
-      width: 200px;
+      width: 540px;
       height: auto;
       position: absolute;
       top: -20px;
@@ -395,8 +396,8 @@
   .shortlogo-img {
     position: absolute;
     top: 20px;
-    width: 50px;
-    height: 50px;
+    width: 540px;
+    height: 60px;
     background-image: url('/assets/images/home/blog_logo_short.png');
     background-size: contain;
     background-repeat: no-repeat;
