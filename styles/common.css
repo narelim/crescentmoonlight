@@ -36,12 +36,13 @@
     
    /* 로고 영역 */
       .logo-area {
-        margin-bottom: 30px; /* 헤더 이미지와 겹치게 조정 */
+        margin-bottom: 40px; /* 헤더 이미지와 겹치게 조정 */
         z-index: 20; /* 헤더 이미지보다 위에 보이게 */
+        justify-content: center; /* 전체 헤더를 중앙 정렬 */
       }
     
     .logo-logo {
-      width: 270px;
+      width: 150px;
       height: auto;
       display: block;
     }
@@ -50,6 +51,8 @@
       .header-area {
         width: 100%;
         max-width: 1200px;
+        margin-top: 60px;
+        justify-content: center; /* 전체 헤더를 중앙 정렬 */
       }
 
     .header-image {
