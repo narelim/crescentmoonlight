@@ -185,11 +185,12 @@
     
 
     /* 활성화된 탭 */
-    .tab.active {
+    .tab-active {
       background: #D8AAAD;
       color: white;
       margin-top: 35px;
       z-index: 10;
+      padding-bottom: 15px;
     }
     
     .tab-label {
@@ -197,7 +198,7 @@
       margin-bottom: auto;
     }
 
-    .tab.active .tab-label {
+    .tab-active .tab-label {
       margin-top: 0;
       margin-bottom: auto;
       z-index: 10;
@@ -213,13 +214,8 @@
       background-repeat: no-repeat;
       margin-top: auto;
     }
-    
-    .tab .tab.active {
-      z-index: 10;
-      padding-bottom: 15px;
-    }
 
-    .tab.active .star-icon-cat {
+    .tab-active .star-icon-cat {
       display: block;
     }
  
