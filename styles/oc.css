@@ -33,7 +33,7 @@
 }  
 
 .oc-hero {
-  position: absolute;
+  position: relative;
   text-align: center;
   padding: 20px;
 }
@@ -45,6 +45,7 @@
 
 /*제목*/
 .oc-title-font{
+  position: relative;
   font-family: 'Breathing', serif;
   font-size: 30px;
   padding:10px;
@@ -99,7 +100,6 @@
 /*라인 스타일과 위치*/
 .star-line-img-oc {
   position: relative;
-  top: 130px;
   width: 70%;
   height: auto;
 }
