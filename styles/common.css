@@ -185,7 +185,7 @@
     
 
     /* 활성화된 탭 */
-    .tab-active {
+    .tab .active {
       background: #D8AAAD;
       color: white;
       margin-top: 35px;
@@ -198,7 +198,7 @@
       margin-bottom: auto;
     }
 
-    .tab-active .tab-label {
+    .tab .active .tab-label {
       margin-top: 0;
       margin-bottom: auto;
       z-index: 10;
@@ -216,7 +216,7 @@
       z-index: 10;
     }
 
-    .tab-active .star-icon-cat {
+    .tab .active .star-icon-cat {
       display: block;
     }
  
