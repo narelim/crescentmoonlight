@@ -1,0 +1,89 @@
+.tab-menu-wrapper {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 880px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+    /* 탭 메뉴 */
+    .tab-menu {
+      display: flex;
+      gap: 10px;
+      width: fit-content;
+    }
+    
+    .tab {
+      width: 90px;
+      aspect-ratio: 1/1;
+      background: #C89FA5;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      color: #55456a;
+      font-family: 'Quinsi', serif;
+      font-size: 15px;
+      padding-top: 6px;
+      margin-top: 50px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    
+
+    /* 활성화된 탭 */
+    .tab.active {
+      background: #D8AAAD;
+      color: white;
+      margin-top: 35px;
+      z-index: 10;
+      padding-bottom: 15px;
+    }
+    
+    .tab-label {
+      margin-top: 0;
+      margin-bottom: auto;
+    }
+
+    .tab.active.tab-label {
+      margin-top: 0;
+      margin-bottom: auto;
+      z-index: 10;
+      font-weight: bold;
+    }
+    
+    .tab.star-icon-cat {
+      display: none;
+      width: 35px;
+      height: 35px;
+      background-image: url('/assets/images/home/blog_element_03_01.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: auto;
+      z-index: 10;
+    }
+
+    .tab.active.star-icon-cat {
+      display: block;
+    }
+ 
+
+    /* 콘텐츠 박스 (게시판) */
+  .oc-content-box {
+    position: relative;
+    border: 3px solid #D8AAAD;
+    background: #fff;
+    padding: 80px 60px 60px; /* 🔥 탭 공간 확보 */
+    max-width: 900px;
+    width: 100%;
+    z-index: 3;
+    box-sizing: border-box;
+}
