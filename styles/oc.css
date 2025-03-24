@@ -33,6 +33,7 @@
 }  
 
 .oc-hero {
+  position: absolute;
   text-align: center;
   padding: 20px;
 }
@@ -42,9 +43,11 @@
   align-items: flex-start;
 }
 
-.title-font{
+/*제목*/
+.oc-title-font{
   font-family: 'Breathing', serif;
   font-size: 30px;
+  padding:10px;
 }
 
 .category:empty {
@@ -93,16 +96,12 @@
   display: inline-block;
 }
 
-.oc-star-line {
-  position: absolute;
-  top: 80px;
-  width: 650px;
-  height: 50px;
-  background-image: url('/assets/images/home/blog_element_05.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: auto;
-  z-index: 2;
+/*라인 스타일과 위치*/
+.star-line-img-oc {
+  position: relative;
+  top: 130px;
+  width: 70%;
+  height: auto;
 }
   /* Adeline 버튼 */
   /*버튼 스타일*/
@@ -117,7 +116,7 @@
   /*버튼이미지*/
   .adeline-button{
     position: absolute;
-    width: 630%;
+    width: 630;
     height: 1390;
     background-image: url('assets/images/ocui/blog_oc_ar_btn.png');
     background-size: contain;
