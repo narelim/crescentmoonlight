@@ -35,6 +35,7 @@
 .oc-hero {
   position: relative;
   text-align: center;
+  align-items: center;
   padding: 20px;
 }
 
