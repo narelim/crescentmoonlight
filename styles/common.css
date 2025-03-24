@@ -26,6 +26,11 @@
         font-family: "Nanum Myeongjo", serif;
     }  
 
+    .container {
+      flex: 1;
+      padding: 0;           /* 🔽 본문도 왼쪽에서 시작하게 */
+    }
+
     /*건들지마라여기는진짜완성된곳이다*/
     .header-container {
       display: flex;
@@ -83,7 +88,7 @@
       width: 100%;
       gap: 40px;
       box-sizing: border-box;
-      padding: 0 40px;
+      padding: 0 20px;
     }
 
     /* 사이드바 */
@@ -143,7 +148,7 @@
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 1;
     width: 100%;
     max-width: 880px;
     display: flex;
@@ -189,6 +194,12 @@
     }
     
     .tab-label {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: auto;
+    }
+
+    .tab.active .tab-label {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: auto;
