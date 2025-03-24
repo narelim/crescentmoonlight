@@ -86,7 +86,7 @@
       align-items: flex-start;
       max-width: 1200px;
       width: 100%;
-      gap: 40px;
+      gap: 10px;
       box-sizing: border-box;
       padding: 0 40px;
     }
@@ -99,6 +99,7 @@
       text-align: center;
       flex-shrink: 0;
       position: relative;
+      margin-left: 0;
     }
 
     /* 사이드바 프로필 스타일 */
