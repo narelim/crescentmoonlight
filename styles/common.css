@@ -142,74 +142,69 @@
 
 
   .tab-menu-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    max-width: 900px;
-    margin-bottom: -40px; /* 겹치기는 하되 위로 너무 안 올라가게 */
     position: relative;
-    z-index: 2;
-    top: 0;
+    margin-top: -50px;  /* 게시판 위로 올라오게 */
+    display: flex;
+    justify-content: center;
+    z-index: 5;
   }
+  
 
     /* 탭 메뉴 */
     .tab-menu {
       display: flex;
-      justify-content: flex-start; /* 왼쪽부터 정렬 */
       gap: 10px;
-      max-width: 80%;
+      justify-content: center;
+      max-width: 900px;
+      width: 100%;
     }
-
+    
     .tab {
       width: 90px;
       aspect-ratio: 1/1;
-      text-align: center;
+      background: #C89FA5;
+      border-radius: 14px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      background: #C89FA5;
-      border-radius: 14px 14px 14px 14px;
-      font-family: 'Quinsi', serif;
-      font-size: 18px;
       color: #55456a;
-      cursor: pointer;
+      font-family: 'Quinsi', serif;
+      font-size: 16px;
+      padding-top: 8px;
+      margin-top: 40px;
       position: relative;
       z-index: 1;
-      padding-top: 6px;
-      margin-top: 40px;       /* 기본은 내려가 있음 */
       transition: all 0.3s ease;
-      overflow: hidden;
     }
+    
 
     /* 활성화된 탭 */
-    .tab.active{
+    .tab.active {
       background: #D8AAAD;
       color: white;
-      font-weight: bold;
-      margin-top: 0;        /* 올라와 있음 */
-      z-index: 10;            /* 가장 위로 */
-     }
-
-    .tab .tab-label {
+      margin-top: 0;
+      z-index: 10;
+    }
+    
+    .tab-label {
+      font-size: 16px;
       margin-top: 0;
       margin-bottom: auto;
-      font-weight: normal;
-      align-self: flex-start;
-      font-size: 18px;
     }
-
-    .tab .star-icon-cat {
+    
+    .star-icon-cat {
       display: none;
       width: 35px;
       height: 35px;
       background-image: url('/assets/images/home/blog_element_03_01.png');
       background-size: contain;
       background-repeat: no-repeat;
-      bottom: 8px;
+      margin-top: auto;
+      margin-bottom: 6px;
     }
-
-    .tab .active .star-icon-cat {
+    
+    .tab.active .star-icon-cat {
       display: block;
     }
  
@@ -219,11 +214,11 @@
       position: relative;
       border: 3px solid #D8AAAD;
       background: #fff;
-      padding-top: 80px; /* 탭과 겹치지 않게 */
+      padding: 60px;
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
-      z-index: 2;  /* 탭보다 아래로 */
+      z-index: 4;  /* 탭보다 아래로 */
       box-sizing: border-box;
       text-align: center;
     }
