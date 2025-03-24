@@ -32,7 +32,6 @@ title: OC
   {%- include header.html -%}
   
   <div class="wrapper">
-  <div class="container" style="position: relative;">
     <!-- 공통 사이드바 -->
     <aside class="sidebar">
         <div class="profile">
@@ -42,7 +41,7 @@ title: OC
         </div>
       
          <!-- ✅ 카테고리가 있을 때만 보이도록 감싸기 -->
-          <div class="category-container" style="display: none;">
+          <div class="category-container">
             <div class="category-title">OC</div>
               
                   <!-- OC 선택 시 표시될 목록 -->
@@ -204,19 +203,19 @@ title: OC
                            </li>
                         </ul>
                     </li>
-                  </div>
         </aside>
-    
+        <div class="container" style="position: relative;">
           {%- include tab.html -%}
 
             <!-- 콘텐츠 박스 -->
-          <section class="content-box">
+          <main class="content-box">
               <span class="title-font">Original Characters</span>
               <div class="oc-star-line"></div>
 
               <button class="adeline-button"></button>
-          </section>
-   </div>
+          </main>
+       </div>
+  </div>
     <!-- 푸터 -->
     <footer>
         <div class="logo-icon"></div>
