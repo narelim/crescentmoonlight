@@ -178,7 +178,7 @@
       padding-top: 6px;
       margin-top: 50px;
       position: relative;
-      z-index: -15;
+      z-index: -1;
       transition: all 0.3s ease;
       overflow: hidden;
     }
@@ -214,8 +214,9 @@
       margin-top: auto;
     }
     
-    .tab.active .tab{
+    .tab .tab.active {
       z-index: 10;
+      padding-bottom: 15px;
     }
 
     .tab.active .star-icon-cat {
