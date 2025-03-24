@@ -50,7 +50,6 @@
   position: relative;
   font-family: 'Breathing', serif;
   font-size: 30px;
-  padding:10px;
 }
 
 .category:empty {
@@ -101,10 +100,13 @@
 
 /*라인 스타일과 위치*/
 .star-line-img-oc {
-  
-  position: relative;
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
   width: 70%;
   height: auto;
+  padding: 10px;
 }
   /* Adeline 버튼 */
   /*버튼 스타일*/
