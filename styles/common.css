@@ -149,7 +149,7 @@
     transform: translateX(-50%);
     z-index: 5;
     width: 100%;
-    max-width: 900px;
+    max-width: 880px;
     display: flex;
     justify-content: flex-start;
   }
@@ -159,9 +159,7 @@
     .tab-menu {
       display: flex;
       gap: 10px;
-      justify-content: center;
-      max-width: 900px;
-      width: 100%;
+      width: fit-content;
     }
     
     .tab {
@@ -176,10 +174,10 @@
       color: #55456a;
       font-family: 'Quinsi', serif;
       font-size: 16px;
-      padding-top: 8px;
+      padding-top: 6px;
       margin-top: 40px;
       position: relative;
-      z-index: 1;
+      z-index: -15;
       transition: all 0.3s ease;
       overflow: hidden;
     }
@@ -200,7 +198,7 @@
       margin-bottom: auto;
     }
     
-    .star-icon-cat {
+    .tab .star-icon-cat {
       display: none;
       width: 35px;
       height: 35px;
@@ -220,13 +218,11 @@
       position: relative;
       border: 3px solid #D8AAAD;
       background: #fff;
-      padding: 60px;
-      max-width: 900px;
+      padding: 80px 60px 60px; /* 🔥 탭 공간 확보 */
+      max-width: 880px;
       width: 100%;
-      margin-top: -30px;
-      z-index: 4;  /* 탭보다 아래로 */
+      z-index: 1;
       box-sizing: border-box;
-      text-align: center;
     }
  
  /* 푸터 */
