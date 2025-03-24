@@ -20,12 +20,12 @@
   color: #d69a9b;
 }  
 
-H1{
+.title-font{
   font-family: 'Breathing', serif;
   font-size: 30px;
 }
 
-.content-box.star-line {
+.oc-star-line {
   position: absolute;
   top: 80px;
   width: 650px;
