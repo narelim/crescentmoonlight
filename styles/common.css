@@ -185,25 +185,27 @@
     
 
     /* 활성화된 탭 */
-    .tab.active {
+    /*.tab.active {
       background: #D8AAAD;
       color: white;
       margin-top: 0;
       z-index: 10;
       font-weight: bold;
       font-size: 15px;
-    }
+    }*/
     
     .tab-label {
-      font-size: 15px;
       margin-top: 0;
       margin-bottom: auto;
     }
 
     .tab.active .tab-label {
-      font-size: 15px;
       margin-top: 0;
       margin-bottom: auto;
+      background: #D8AAAD;
+      color: white;
+      z-index: 10;
+      font-weight: bold;
     }
     
     .tab .star-icon-cat {
@@ -369,7 +371,7 @@
   }
   .tab-label{
     font-family: 'Quinsi', serif;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   
