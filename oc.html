@@ -24,11 +24,12 @@ title: OC
  <!-- Nanum Myeongjo (공지 내용) -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 
- <link rel="stylesheet" href="styles/common.css">
+<link rel="stylesheet" href="styles/common.css">
 <link rel="stylesheet" href="styles/taboc.css">
- <link rel="stylesheet" href="styles/oc.css">
+<link rel="stylesheet" href="styles/oc.css">
 </head>
 <body>
+
   {%- include header.html -%}
   
   <div class="wrapper">
@@ -41,9 +42,11 @@ title: OC
         </div>
       
          <!-- ✅ 카테고리가 있을 때만 보이도록 감싸기 -->
-          <div class="category-container">
+          <section class="category">
+            
             <div class="category-title">OC</div>
               
+            <div class="category-container">
                   <!-- OC 선택 시 표시될 목록 -->
                   <div id="oc-categories" style="display: none;">
                     <ul class="category"></ul>
@@ -203,16 +206,20 @@ title: OC
                            </li>
                         </ul>
                     </li>
+                  </div>
+                  </div>
+              </section>
         </aside>
         <div class="container" style="position: relative;">
           {%- include tab.html -%}
 
             <!-- 콘텐츠 박스 -->
           <main class="content-box">
-            <section class="oc-hero">
+            <div class="oc-hero">
               <span class="title-font">Original Characters</span>
               <div class="oc-star-line"></div>
-
+            </div>
+            <section>
               <button class="adeline-button"></button>
             </section>
           </main>
