@@ -377,6 +377,7 @@
     background-image: url('/assets/images/home/blog_mainlogo.png');
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 4;
   }
   
   /* 짧은 로고 */
@@ -399,6 +400,5 @@
   .rotate-90 {
     transform: rotate(90deg);
   }
-  
-  /* 기능 */
+
   

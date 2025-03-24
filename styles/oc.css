@@ -25,6 +25,18 @@ H1{
   font-size: 30px;
 }
 
+.content-box.star-line {
+  position: absolute;
+  top: 80px;
+  width: 650px;
+  height: 50px;
+  background-image: url('/assets/images/home/blog_element_05.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  z-index: 2;
+}
+
   /* 기본 버튼 스타일 */
   .custom-button {
     width: 180px;      /* 원하는 크기 */
@@ -36,6 +48,7 @@ H1{
 
   /* Adeline 버튼 */
   .custom-button.adeline {
+    position: absolute;
     width: 630px;
     height: 1390px;
     background-image: url('assets/images/ocui/blog_oc_ar_btn.png');
