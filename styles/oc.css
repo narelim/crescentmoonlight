@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Breathing'; /* 원하는 폰트 이름 */
+  src: url('assets/fonts/Breathing Personal Use Only.woff2') format('woff2'); /* 폰트 파일 경로 */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .category {
   list-style: none;
   padding-left: 10px;
@@ -28,6 +35,11 @@
 .oc-hero {
   text-align: center;
   padding: 20px;
+}
+
+/*버튼 들어가는 곳 스타일*/
+.character-buttons{
+  align-items: flex-start;
 }
 
 .title-font{
@@ -93,10 +105,20 @@
   z-index: 2;
 }
   /* Adeline 버튼 */
+  /*버튼 스타일*/
+  .character-buttons-img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  /*버튼이미지*/
   .adeline-button{
     position: absolute;
-    width: 630px;
-    height: 1390px;
+    width: 630%;
+    height: 1390;
     background-image: url('assets/images/ocui/blog_oc_ar_btn.png');
     background-size: contain;
     background-repeat: no-repeat;
