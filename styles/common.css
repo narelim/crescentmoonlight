@@ -144,14 +144,12 @@
   .tab-menu-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
-    position: absolute;
+    justify-content: flex-start;
     max-width: 900px;
-    position: absolute;  /* 🔥 중요: 게시판 위에 올려줌 */
-    top: -45px;           /* 원하는 만큼 겹쳐서 내려오게 조절 */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -50px; /* 게시판과 겹치게 */
   }
 
     /* 탭 메뉴 */
@@ -169,7 +167,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       background: #C89FA5;
       border-radius: 14px 14px 14px 14px;
       font-family: 'Quinsi', serif;
@@ -177,8 +175,8 @@
       color: #55456a;
       cursor: pointer;
       position: relative;
-      z-index: -1;
-      padding-top: 8px;
+      z-index: 1;
+      padding-top: 10px;
       margin-top: 40px;       /* 기본은 내려가 있음 */
       transition: all 0.3s ease;
       overflow: hidden;
@@ -189,20 +187,19 @@
       background: #D8AAAD;
       color: white;
       font-weight: bold;
-      margin-top: 0px;        /* 올라와 있음 */
-      z-index: 10;            /* 가장 위로 */
+      margin-top: 0;        /* 올라와 있음 */
+      z-index: 3;            /* 가장 위로 */
      }
 
     .tab .tab-label {
-      margin-top: 4;
+      margin-top: 0;
+      margin-bottom: auto;
       font-weight: normal;
       align-self: flex-start;
-      margin-bottom: 4px;
       font-size: 18px;
     }
 
     .tab .star-icon-cat {
-      position: absolute;
       display: none;
       width: 35px;
       height: 35px;
@@ -222,7 +219,7 @@
       position: relative;
       border: 3px solid #D8AAAD;
       background: #fff;
-      padding: 60px;
+      padding-top: 80px; /* 탭과 겹치지 않게 */
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
