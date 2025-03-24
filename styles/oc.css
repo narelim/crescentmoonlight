@@ -20,6 +20,11 @@
   color: #d69a9b;
 }  
 
+.oc-hero {
+  text-align: center;
+  padding: 20px;
+}
+
 .title-font{
   font-family: 'Breathing', serif;
   font-size: 30px;
