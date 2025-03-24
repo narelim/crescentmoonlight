@@ -36,18 +36,8 @@
   margin-top: auto;
   z-index: 2;
 }
-
-  /* 기본 버튼 스타일 */
-  .custom-button {
-    width: 180px;      /* 원하는 크기 */
-    height: 300px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
   /* Adeline 버튼 */
-  .custom-button.adeline {
+  .adeline-button{
     position: absolute;
     width: 630px;
     height: 1390px;
