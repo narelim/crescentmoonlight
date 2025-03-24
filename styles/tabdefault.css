@@ -68,7 +68,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       margin-top: auto;
-      z-index: 10;
+      z-index: 11;
     }
 
     .tab.active.star-icon-cat {

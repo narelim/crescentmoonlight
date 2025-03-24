@@ -107,7 +107,7 @@
   /* Adeline 버튼 */
   /*버튼 스타일*/
   .character-buttons-img{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     max-width: 300px;
