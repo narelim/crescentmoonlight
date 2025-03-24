@@ -214,6 +214,10 @@
       margin-top: auto;
     }
     
+    .tab.active .tab{
+      z-index: 10;
+    }
+
     .tab.active .star-icon-cat {
       display: block;
     }
