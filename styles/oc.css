@@ -33,6 +33,7 @@
 }  
 
 .oc-hero {
+  flex-direction: column;
   position: relative;
   text-align: center;
   align-items: center;
@@ -100,6 +101,7 @@
 
 /*라인 스타일과 위치*/
 .star-line-img-oc {
+  
   position: relative;
   width: 70%;
   height: auto;
