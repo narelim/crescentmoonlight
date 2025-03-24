@@ -146,10 +146,10 @@
     display: flex;
     justify-content: flex-start;
     max-width: 900px;
-    margin: 0 auto;
+    margin-bottom: -40px; /* 겹치기는 하되 위로 너무 안 올라가게 */
     position: relative;
     z-index: 2;
-    margin-bottom: -50px; /* 게시판과 겹치게 */
+    top: 0;
   }
 
     /* 탭 메뉴 */
@@ -176,7 +176,7 @@
       cursor: pointer;
       position: relative;
       z-index: 1;
-      padding-top: 10px;
+      padding-top: 6px;
       margin-top: 40px;       /* 기본은 내려가 있음 */
       transition: all 0.3s ease;
       overflow: hidden;
@@ -188,7 +188,7 @@
       color: white;
       font-weight: bold;
       margin-top: 0;        /* 올라와 있음 */
-      z-index: 3;            /* 가장 위로 */
+      z-index: 10;            /* 가장 위로 */
      }
 
     .tab .tab-label {
@@ -223,7 +223,7 @@
       max-width: 900px;
       width: 100%;
       margin-top: -30px;
-      z-index: 4;  /* 탭보다 아래로 */
+      z-index: 2;  /* 탭보다 아래로 */
       box-sizing: border-box;
       text-align: center;
     }
