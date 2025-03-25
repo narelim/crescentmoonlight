@@ -14,8 +14,9 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  position: relative;
+  position: absolute;
   margin-top: 0;
+  z-index: 1;
 }
 
 /* 카테고리 스타일 */

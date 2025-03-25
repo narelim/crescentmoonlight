@@ -245,7 +245,8 @@
     font-family: 'Quinsi', serif; /* 카테고리 텍스트 */
     font-size: 40px;
     font-weight: normal;
-    position: relative;
+    position: absolute;
+    z-index: 2;
   }
   
   .categorybig {
