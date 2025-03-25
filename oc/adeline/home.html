@@ -25,7 +25,7 @@ title: Adeline Ross Home
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 
 <!--메인스타일불러오기-->
-<link rel="stylesheet" href="styles\common.css">
+<link rel="stylesheet" href="\styles\common.css">
 
 <link rel="stylesheet" href="\styles\taboc.css">
 <link rel="stylesheet" href="\styles\oc.css">
@@ -34,7 +34,7 @@ title: Adeline Ross Home
 </head>
 <body>
 
-  {%- include _include\header.html -%}
+  {%- include header.html -%}
   
   <div class="wrapper">
     <!-- 공통 사이드바 -->
@@ -47,11 +47,11 @@ title: Adeline Ross Home
       
          <!-- ✅ 카테고리가 있을 때만 보이도록 감싸기 -->
           <section class="category">
-            {%- include _include\oc-category.html -%}
+            {%- include oc-category.html -%}
             </section>
         </aside>
         <div class="container" style="position: relative;">
-          {%- include _include\tab.html -%}
+          {%- include tab.html -%}
 
             <!-- 콘텐츠 박스 -->
           <main class="content-box">
@@ -63,7 +63,7 @@ title: Adeline Ross Home
        </div>
   </div>
            <!-- 공통 푸터 -->
-           {%- include _include\footer.html -%}
+           {%- include footer.html -%}
 
     <script src="script\oc.js"></script>
 </body>
