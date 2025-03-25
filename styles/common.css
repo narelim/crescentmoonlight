@@ -272,17 +272,17 @@
   }
   
 
-  .category-item:not(.selected) .littleheart,
+  .subcategory span:not(.selected) .littleheart,
   .category-item:not(.selected) .categorybig,
-  .category-item:not(.selected) .categorylittle,
-  .category-item:not(.selected) .emoji {
+  .subcategory span:not(.selected) .categorylittle,
+  .subcategory span:not(.selected) .emoji {
     color: black  /* 선택안된 건 검정색 */
   }
 
-  .category-item .selected .littleheart,
+  .subcategory span.selected .littleheart,
   .category-item .selected .categorybig,
-  .category-item .selected .categorylittle,
-  .category-item .selected .emoji {
+  .subcategory span.selected .categorylittle,
+  .subcategory span.selected .emoji {
     color: #D8AAAD  /* 선택된 건 핑크색 */
   }
 
