@@ -47,7 +47,6 @@
 
 /*제목*/
 .oc-title-font{
-  position: relative;
   font-family: 'Breathing', serif;
   font-size: 30px;
 }
@@ -107,7 +106,7 @@
   width: 70%;
   height: auto;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
   /* Adeline 버튼 */
   /*버튼 스타일*/
