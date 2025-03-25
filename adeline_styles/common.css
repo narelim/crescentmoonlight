@@ -1,0 +1,442 @@
+    /* 공통 레이아웃 */
+    html, body{
+        overflow-x: hidden;   /* 가로 스크롤 제거 */
+        overflow-y: auto;       /* 세로 스크롤만 허용 */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      img, iframe, video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+      body {
+          font-family: "TrajanPro", serif;
+          background: #fff9ef;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          align-items: center; /* 중앙 정렬 */
+      }
+  
+      :lang(ko){
+          font-family: "Nanum Myeongjo", serif;
+      }  
+  
+      .container {
+        flex: 1;
+        padding: 40px 0;           /* 🔽 본문도 왼쪽에서 시작하게 */
+      }
+  
+      /*건들지마라여기는진짜완성된곳이다*/
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff9ef;
+        padding: 20px 0;
+      }
+      
+      /*건들지마라여기는진짜완성된곳이다*/
+     /* 로고 영역 */
+      .logo-area {
+        display: flex;
+        margin-bottom: 10px; /* 헤더 이미지와 겹치게 조정 */
+        z-index: 20; /* 헤더 이미지보다 위에 보이게 */
+        justify-content: flex-start;
+        align-items:center;
+      }
+      
+      /*건들지마라여기는진짜완성된곳이다*/
+      .logo-img {
+        width: 200px;
+        height: auto;
+        display: block;
+      }
+  
+      .logo-link {
+        display: inline-block;
+      }
+      
+  
+      /*건들지마라여기는진짜완성된곳이다*/
+      /* 헤더 이미지 영역 */
+      .header-area {
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 10px;
+        justify-content: center;
+      }
+  
+      /*건들지마라여기는진짜완성된곳이다*/
+      .header-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+  
+      /* 메인 레이아웃 */
+      .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 1200px;
+        width: 100%;
+        gap: 40px;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
+  
+      /* 사이드바 */
+      .sidebar {
+        width: 250px;
+        background: #fff9ef;
+        padding: 20px;
+        text-align: center;
+        flex-shrink: 0;
+        position: relative;
+        margin-left: 0;
+      }
+  
+      /* 사이드바 프로필 스타일 */
+      .profile {
+      text-align: center;
+      padding: 20px;
+      }
+  
+      /* 프로필 이미지 스타일 */
+      .profile-img {
+      width: 200px; /* 사이드바 크기에 맞게 조절 (원하는 크기로 변경 가능) */
+      height: 200px;
+      border-radius: 50%; /* 동그랗게 만들기 */
+      object-fit: cover; /* 이미지를 원형 안에 꽉 차게 맞춤 */
+      border: 3px solid #C89FA5; /* 원하는 테두리 색상 */
+      }
+  
+      
+      /*건들지마라여기는진짜완성된곳이다*/
+      /* 헤더 */
+      .header {
+          align-items: center; /* 중앙 정렬 */
+          text-align: center;
+          font-size: 24px;
+          padding: 20px;
+      }   
+  
+    /* 모바일 */
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+      }
+    
+      .sidebar {
+        width: 100%;
+        max-width: 400px;
+      }
+    
+      .content-box {
+        max-width: 100%;
+        padding: 40px 20px;
+      }
+    
+      .tab-menu-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .tab {
+        width: 70px;
+        font-size: 14px;
+      }
+    
+      .tab-label {
+        font-size: 14px;
+      }
+    }
+  
+  /*꾸밈요소들*/
+    /*폰트*/
+    @font-face {
+      font-family: "Cafe24 Decoschool";
+      src: url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.eot");
+      src: url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.svg#Cafe24 Decoschool")format("svg");
+  }
+    
+    @font-face {
+      font-family: "Quinsi";
+      src: url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.eot");
+      src: url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.svg#Quinsi")format("svg");
+    }
+    
+    @font-face {
+      font-family: "TrajanPro-Regular";
+      src: url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.eot");
+      src: url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.svg#TrajanPro-Regular")format("svg");
+  }
+    
+  @font-face {
+    font-family: "Segoe UI Symbol";
+    src: url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.eot");
+    src: url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.svg#Segoe UI Symbol")format("svg");
+  }
+  
+    @font-face {
+      font-family: "Breathing Personal Use";
+      src: url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.eot");
+      src: url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.svg#Breathing Personal Use")format("svg");
+  }
+    
+    /*특정 문자 꾸밈*/
+    .heart {
+      font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
+      font-weight: normal;
+    }
+    
+    .littleheart {
+      font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
+      font-weight: normal;
+      font-size: 30px;
+    }
+    
+    .bigheart {
+      font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
+      font-weight: normal;
+      font-size: 40px;
+    }
+    
+    p {
+      font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
+      font-weight: normal;
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: normal;
+    }
+    
+    .category-title {
+      font-family: 'Quinsi', serif; /* 카테고리 텍스트 */
+      font-size: 40px;
+      font-weight: normal;
+      position: absolute;
+      text-align: center;
+      left: 50%; 
+      top: 50%; 
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      margin-top: 13px;
+    }
+    
+    .categorybig {
+      font-family: 'TrajanPro-Regular', serif; /* 대분류 */
+      font-size: 24px;
+      font-weight: normal;
+    }
+    
+    .categorylittle {
+      font-family: 'TrajanPro-Regular', serif; /* 소분류 */
+      font-size: 12px;
+      font-weight: normal;
+    }
+    
+    /* 제목 스타일 */
+    .title {
+      font-family: 'Breathing Personal Use', serif; /* 제목 폰트 */
+      font-size: 28px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    
+    /*제목*/
+    .oc-title-font{
+    font-family: 'Breathing Personal Use', serif;
+    font-size: 60px;
+    font-weight: normal;
+  }
+  
+    .emoji{
+      font-family: 'Segoe UI Symbol', sans-serif; /*이모지*/
+      font-weight: normal;
+    }
+    
+    .tab{
+      font-family: 'Quinsi', serif;
+      font-size: 30px;
+    }
+    .tab-label{
+      font-family: 'Quinsi', serif;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    
+    
+    
+    /*엘레먼트*/
+    /* 달 아이콘 */
+    .moon-icon {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_01.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 달2 아이콘 */
+    .moon2-icon {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_02.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 별 아이콘 */
+    .star-icon {
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_03.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 별 아이콘 */
+    .star-icon-cat {
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_03.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 빛 아이콘 */
+    .light-icon {
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_04.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 빛 아이콘 */
+    .oc-light-icon-1 {
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      background-image: url('/assets/images/home/blog_element_04.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 별라인 아이콘 */
+    .star-line {
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 650px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_05.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 로고 아이콘 */
+    .logo-icon {
+      position: absolute;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_element_06.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+    
+    /* 로고 */
+    .mainlogo-img {
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-image: url('/assets/images/home/blog_mainlogo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 4;
+    }
+    
+    /* 짧은 로고 */
+    .header-logo-img {
+      position: absolute;
+      top: 20px;
+      width: 540px;
+      height: 60px;
+      background-image: url('/assets/images/home/blog_logo_short.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    /* 카테고리 꾸밈요소 */
+    .category-light-img {
+      position: absolute;
+      width: 370px;
+      height:265px;
+      background-image: url('/assets/images/home/blog_element_07.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    /* 회전 */
+    
+    .mirror {
+      transform: scaleX(-1);
+    }
+    
+    .rotate-90 {
+      transform: rotate(90deg);
+    }
+  
+    
