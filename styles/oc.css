@@ -83,6 +83,7 @@
 }
 
 .category-item {
+  display: inline-flex;
   cursor: pointer;
   font-weight: bold;
   align-items : center;
@@ -94,6 +95,7 @@
 
 
 .subcategory {
+  display: inline-flex;
   align-items : center;
   list-style: none;
   padding-left: 20px;
