@@ -3,7 +3,7 @@ footer {
     background: #D8AAAD;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
     width: 100%;
     margin-top: auto;
     flex-direction: column;
@@ -16,7 +16,7 @@ footer {
     padding: 20px;
   }
   .foot img {
-    margin-top: 50px;
+    margin-top: 75px;
     width: 3%;
     max-width: 3%;
     height: auto;
