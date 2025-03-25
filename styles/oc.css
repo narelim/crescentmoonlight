@@ -8,6 +8,8 @@
   position: relative;
   text-align: center;
   align-items: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .oc-category-top img{
