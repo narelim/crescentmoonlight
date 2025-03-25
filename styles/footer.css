@@ -6,11 +6,10 @@ footer {
     padding-top: 10px;
     width: 100%;
     margin-top: auto;
-    position:absolute;
   }
 
   .foot{
-    position: relative;
+    position: absolute;
     text-align: center;
     padding: 20px;
   }
