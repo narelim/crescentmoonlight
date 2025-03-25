@@ -1,3 +1,19 @@
+function selectSubcategory(sub, category){
+    document.querySelectorAll('.subcategory span').forEach(el => {
+    el.classList.remove('selected');
+  });
+}
+
+const selected=document.getElementById(`${category}-${sub}`);
+if(selected)selected.classList.add(`selected`)
+
+    document.querySelectorAll(`.categorybig`).forEach(el=>{
+        el.classList.remove('selected');
+    })
+
+    const title=document.querySelector(`#${category}-title .categorybig`);
+    if(title)title.classList.add('selected');
+
 function toggleCategory(category) {
     const allSubcategories = document.querySelectorAll('.subcategory');
     const allHearts = document.querySelectorAll('.category-item .littleheart');
