@@ -1,6 +1,8 @@
 .category {
   list-style: none;
   padding-top: 50px;
+  align-items: center;
+  text-align: center;
 }
 
 /* 카테고리 스타일 */

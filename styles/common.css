@@ -132,9 +132,22 @@
     background: #D8AAAD;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
     width: 100%;
     margin-top: auto;
+  }
+
+  .footer-img{
+    width: 30px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-image: url('/assets/images/home/blog_element_06_01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
   }
 
   /* 모바일 */
@@ -388,6 +401,20 @@
     background-repeat: no-repeat;
     z-index: 2;
   }
+
+  /* 로고 아이콘 화이트 */
+  /*.logo-icon-white {
+    position: relative;
+    text-align: center;
+    top: 80px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_06_01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }*/
   
   /* 로고 */
   .mainlogo-img {
@@ -409,6 +436,16 @@
     width: 540px;
     height: 60px;
     background-image: url('/assets/images/home/blog_logo_short.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* 카테고리 꾸밈요소 */
+  .category-light-img {
+    position: absolute;
+    width: 370px;
+    height:265px;
+    background-image: url('/assets/images/home/blog_element_07.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
