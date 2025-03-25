@@ -8,6 +8,9 @@
   position: relative;
   text-align: center;
   align-items: center;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 .oc-category-top img{
@@ -17,6 +20,9 @@
   position: absolute;
   margin-top: 0;
   z-index: 1;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 /* 카테고리 스타일 */
@@ -51,7 +57,7 @@
 
 .category-container{
   display: block;
-  padding-top: 40px;
+  margin-top: 40px;
   align-items: flex-start;
   text-align: left;
 }

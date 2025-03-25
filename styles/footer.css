@@ -13,10 +13,12 @@ footer {
     padding: 20px;
   }
   .foot img {
-    max-width: 30%;
+    max-width: 10%;
     height: auto;
     position: relative;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 10px;
   }
