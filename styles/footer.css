@@ -13,7 +13,7 @@ footer {
     position: relative;
     text-align: center;
   }
-  
+
   .foot img {
     margin-top: 90px;
     width: 2%;
@@ -37,4 +37,5 @@ footer {
     transform: translate(-50%, -50%);
     position: relative;
     text-align: center;
+    padding-bottom: 10px;
   }
