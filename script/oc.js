@@ -4,14 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const parts = path.split("/").filter(p => p); // ['oc', 'adeline', 'info']
   
     if (parts.length >= 3) {
-      const category = parts[1];  // adeline
-      const sub = parts[2].replace('.html', '');  // info
-      toggleCategory(category);
-      highlightSubcategory(sub, category);
-    } else if (parts.length === 2 && parts[1] === 'oc.html') {
-      toggleCategory('oc');
-    }
-  });
+        const category = parts[1]; // adeline
+        const sub = parts[2].replace('.html', '');
+        toggleCategory(category);
+        highlightSubcategory(sub, category);
+      } else if (parts.length === 1 && parts[0] === 'oc.html') {
+        toggleCategory('oc'); // Main 페이지
+      }
+    });
+    
   
   function toggleCategory(category) {
     // 모든 서브카테고리 닫기
@@ -27,13 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     // 해당 대분류 열기
-    const currentSub = document.getElementById(`${category}-sub`);
-    const currentItem = document.querySelector(`#${category}-title`)?.closest('.category-item');
-    const heartIcon = document.querySelector(`#${category}-title .littleheart`);
+    const subList = document.getElementById(`${category}-sub`);
+    const titleSpan = document.getElementById(`${category}-title`);
+    const item = titleSpan?.closest('.category-item');
+    const heart = titleSpan?.querySelector('.littleheart');
   
-    if (currentSub) currentSub.style.display = 'block';
-    if (currentItem) currentItem.classList.add('selected');
-    if (heartIcon) heartIcon.textContent = '♥';
+  
+    if (subList) subList.style.display = 'block';
+    if (item) item.classList.add('selected');
+    if (heartIcon) heart.textContent = '♥';
   }
   
   function highlightSubcategory(sub, category) {
