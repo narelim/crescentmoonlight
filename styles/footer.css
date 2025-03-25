@@ -1,0 +1,22 @@
+/* 푸터 */
+footer {
+    background: #D8AAAD;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .foot{
+    text-align: center;
+    padding: 20px;
+  }
+  .foot img {
+    width: 30%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
