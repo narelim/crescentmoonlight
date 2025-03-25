@@ -246,6 +246,8 @@
     font-size: 40px;
     font-weight: normal;
     position: absolute;
+    text-align: center;
+    
     z-index: 2;
   }
   

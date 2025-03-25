@@ -8,9 +8,6 @@
   position: relative;
   text-align: center;
   align-items: center;
-  left: 50%; 
-  top: 50%; 
-  transform: translate(-50%, -50%);
 }
 
 .oc-category-top img{
@@ -57,7 +54,7 @@
 
 .category-container{
   display: block;
-  margin-top: 40px;
+  margin-top: 120px;
   align-items: flex-start;
   text-align: left;
 }
