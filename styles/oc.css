@@ -35,7 +35,9 @@
 
 /*oc컨테이너 스타일*/
 .oc-categories{
+  position: relative;
   text-align: left;
+  align-items: center;
 }
 
 .sidecategory-container {

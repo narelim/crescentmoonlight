@@ -173,39 +173,44 @@
 /*꾸밈요소들*/
   /*폰트*/
   @font-face {
-    font-family: 'Cafe24Decoschool'; /* 원하는 폰트 이름 */
-    src: url('assets/fonts/Cafe24Decoschool.woff2') format('woff2'); /* 폰트 파일 경로 */
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Cafe24 Decoschool";
+    src: url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.eot");
+    src: url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/45234b09a6a1e2d3b152b57ffbc54670.svg#Cafe24 Decoschool")format("svg");
+}
+  
+  @font-face {
+    font-family: "Quinsi";
+    src: url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.eot");
+    src: url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d7bbdd86af5949df51ce65421ef82fa8.svg#Quinsi")format("svg");
   }
   
   @font-face {
-    font-family: 'Quinsi'; /* 원하는 폰트 이름 */
-    src: url('assets/fonts/Quinsi.woff2') format('woff2'); /* 폰트 파일 경로 */
-    font-weight: normal;
-    font-style: normal;
-  }
+    font-family: "TrajanPro-Regular";
+    src: url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.eot");
+    src: url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c07d5c6528b6cc0eac08afd7a3199657.svg#TrajanPro-Regular")format("svg");
+}
   
-  @font-face {
-    font-family: 'Breathing Personal Use Only'; /* 원하는 폰트 이름 */
-    src: url('assets/fonts/Breathing Personal Use Only.woff2') format('woff2'); /* 폰트 파일 경로 */
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'TrajanPro-Regular'; /* 원하는 폰트 이름 */
-    src: url('assets/fonts/TrajanPro-Regular.woff2') format('woff2'); /* 폰트 파일 경로 */
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Segoe UI Symbol'; /* 원하는 폰트 이름 */
-    src: url('assets/fonts/Segoe UI Symbol.woff2') format('woff2'); /* 폰트 파일 경로 */
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Segoe UI Symbol";
+  src: url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.eot");
+  src: url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/150ed9b2a009a71d2d819b5561167302.svg#Segoe UI Symbol")format("svg");
+}
 
   @font-face {
     font-family: "Breathing Personal Use";
@@ -219,16 +224,16 @@
   
   /*특정 문자 꾸밈*/
   .heart {
-    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
   }
   
   .littleheart {
-    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
     font-size: 12px;
   }
   
   .bigheart {
-    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
     font-size: 20px;
   }
   
