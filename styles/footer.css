@@ -1,13 +1,12 @@
 /* 푸터 */
 footer {
-  display: flex;
     background: #D8AAAD;
     color: white;
     text-align: center;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 100px;
+    height: 200px;
   }
 
   .foot{
