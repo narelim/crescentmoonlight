@@ -38,11 +38,7 @@
   align-items: flex-start;
 }
 
-/*제목*/
-.oc-title-font{
-  font-family: 'Breathing', serif;
-  font-size: 30px;
-}
+
 
 .category:empty {
   display: none;

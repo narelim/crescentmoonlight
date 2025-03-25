@@ -209,16 +209,16 @@
   
   /*특정 문자 꾸밈*/
   .heart {
-    font-family: 'Font', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
   }
   
   .littleheart {
-    font-family: 'Font', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
     font-size: 12px;
   }
   
   .bigheart {
-    font-family: 'Font', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
     font-size: 20px;
   }
   
@@ -253,6 +253,12 @@
     margin-bottom: 10px;
   }
   
+  /*제목*/
+  .oc-title-font{
+  font-family: 'Breathing', serif;
+  font-size: 30px;
+}
+
   .emoji{
     font-family: 'Emoji', sans-serif; /*이모지*/
   }
