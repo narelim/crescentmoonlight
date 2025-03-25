@@ -1,36 +1,27 @@
- function toggleCategory(category) {
-        const allSubcategories = document.querySelectorAll('.subcategory');
-        const allHearts = document.querySelectorAll('.category-item .littleheart');
-  
-    // 모두 닫고, 모든 하트를 비우기
-    allSubcategories.forEach(ul => ul.classList.remove('open'));
-    allHearts.forEach(heart => heart.textContent = '♡');
-  
-    const currentSub = document.getElementById(`${category}-sub`);
-    const currentHeart = document.querySelector(`#${category}-title .littleheart`);
-  
-    if (currentSub) {
-      const isOpen = currentSub.classList.contains('open');
-  
-      if (!isOpen) {
-        currentSub.classList.add('open');
-        if (currentHeart) currentHeart.textContent = '♥'; // 하트 색칠
-      }
-    }
-    }
-
-    function selectSubcategory(sub, category){
-        document.querySelectorAll('.subcategory span').forEach(el => {
-        el.classList.remove('selected');
+function toggleCategory(category) {
+    // 모든 서브카테고리 닫기
+    document.querySelectorAll('.subcategory').forEach(sub => {
+      sub.style.display = 'none';
     });
-
-    const selected=document.getElementById(`${category}-${sub}`);
-    if(selected)selected.classList.add(`selected`)
-
-        document.querySelectorAll(`.categorybig`).forEach(el=>{
-            el.classList.remove('selected');
-        })
-
-        const title=document.querySelector(`#${category}-title .categorybig`);
-        if(title)title.classList.add('selected');
-    }
+  
+    // 모든 대분류에서 'selected' 제거하고 하트 초기화
+    document.querySelectorAll('.category-item').forEach(item => {
+      item.classList.remove('selected');
+      const heart = item.querySelector('.littleheart');
+      if (하트) heart.textContent = '♡';
+    });
+  
+    // 현재 선택된 대분류 열기
+    const currentSub = document.getElementById(`${category}-sub`);
+    const currentItem = document.querySelector(`#${category}-title`)?.closest('.category-item');
+    const heartIcon = document.querySelector(`#${category}-title .littleheart`);
+  
+    if (currentSub) currentSub.style.display = 'block';
+    if (currentItem) currentItem.classList.add('selected');
+    if (heartIcon) heartIcon.textContent = '♥';
+  }
+  
+  function selectSubcategory(sub, category) {
+    // 페이지 이동
+    window.location.href = `/oc/${category}/${sub}.html`;
+  }

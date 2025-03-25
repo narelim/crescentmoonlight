@@ -110,11 +110,6 @@
   display: inline-block;
 }
 
-.selected{
-color:#d69a9b;
-font-weight: bold;
-}
-
 /*라인 스타일과 위치*/
 .star-line-img-oc {
   position: absolute; 

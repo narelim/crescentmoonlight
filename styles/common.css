@@ -264,10 +264,22 @@
   
   .categorylittle {
     font-family: 'TrajanPro-Regular', serif; /* 소분류 */
-    font-size: 12px;
+    font-size: 20px;
     font-weight: normal;
   }
   
+  .category-item .selected .categorybig {
+    color:#d69a9b;
+  }
+
+  .category-item .selected .categorylittle {
+    color:#d69a9b;
+  }
+
+  .category-item .selected .littleheart {
+    color:#d69a9b;
+  }
+
   /* 제목 스타일 */
   .title {
     font-family: 'Breathing Personal Use', serif; /* 제목 폰트 */
