@@ -1,11 +1,5 @@
 .category {
   list-style: none;
-}
-
-.occategory {
-  list-style: none;
-  align-items: center;
-  text-align: center;
   padding-top: 50px;
 }
 
@@ -76,8 +70,6 @@
 .subcategory li {
   cursor: pointer;
 }
-
-
 
 
 .subcategory {
