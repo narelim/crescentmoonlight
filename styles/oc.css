@@ -12,9 +12,9 @@
 
 .oc-category-top img{
   width: 100%;
-  max-width: 30px;
   height: auto;
   object-fit: cover;
+  position: absolute;
 }
 
 /* 카테고리 스타일 */
