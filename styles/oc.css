@@ -33,6 +33,13 @@
   padding: 20px;
 }
 
+.category-container{
+  display: block;
+  padding-top: 40px;
+  align-items: flex-start;
+  text-align: left;
+}
+
 /*oc컨테이너 스타일*/
 .oc-categories{
   position: relative;
@@ -64,11 +71,7 @@
   cursor: pointer;
 }
 
-.category-container{
-  display: block;
-  padding-top: 40px;
-  align-items: flex-start;
-}
+
 
 
 .subcategory {
