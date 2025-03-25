@@ -1,5 +1,6 @@
 /* 푸터 */
 footer {
+    height: 150px;
     background: #D8AAAD;
     color: white;
     text-align: center;
@@ -16,7 +17,7 @@ footer {
     padding: 20px;
   }
   .foot img {
-    margin-top: 75px;
+    margin-top: 90px;
     width: 3%;
     max-width: 3%;
     height: auto;
@@ -30,6 +31,7 @@ footer {
 
   .foot-font {
     font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
+    color:white;
     font-weight: normal;
     font-size: 14px;
     left: 50%; 
