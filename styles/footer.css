@@ -1,5 +1,6 @@
 /* 푸터 */
 footer {
+  display: flex;
     background: #D8AAAD;
     color: white;
     text-align: center;
