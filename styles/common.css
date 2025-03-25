@@ -238,30 +238,36 @@
   /*특정 문자 꾸밈*/
   .heart {
     font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
+    font-weight: normal;
   }
   
   .littleheart {
     font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
-    font-size: 12px;
+    font-weight: normal;
+    font-size: 16px;
   }
   
   .bigheart {
     font-family: 'Cafe24 Decoschool', serif; /* 하트 특수문자용 폰트 */
+    font-weight: normal;
     font-size: 20px;
   }
   
   p {
     font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
+    font-weight: normal;
   }
 
   a {
     text-decoration: none;
     color: inherit;
+    font-weight: normal;
   }
   
   .category-title {
     font-family: 'Quinsi', serif; /* 카테고리 텍스트 */
     font-size: 40px;
+    font-weight: normal;
   }
   
   .categorybig {
@@ -273,6 +279,7 @@
   .categorylittle {
     font-family: 'TrajanPro-Regular', serif; /* 소분류 */
     font-size: 12px;
+    font-weight: normal;
   }
   
   /* 제목 스타일 */
@@ -280,16 +287,19 @@
     font-family: 'Breathing Personal Use', serif; /* 제목 폰트 */
     font-size: 28px;
     margin-bottom: 10px;
+    font-weight: normal;
   }
   
   /*제목*/
   .oc-title-font{
   font-family: 'Breathing Personal Use', serif;
   font-size: 60px;
+  font-weight: normal;
 }
 
   .emoji{
     font-family: 'Segoe UI Symbol', sans-serif; /*이모지*/
+    font-weight: normal;
   }
   
   .tab{
@@ -299,6 +309,7 @@
   .tab-label{
     font-family: 'Quinsi', serif;
     font-size: 25px;
+    font-weight: normal;
   }
   
   
@@ -443,6 +454,7 @@
   /* 카테고리 꾸밈요소 */
   .category-light-img {
     position: absolute;
+    top: 80px;
     width: 370px;
     height:265px;
     background-image: url('/assets/images/home/blog_element_07.png');

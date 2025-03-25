@@ -1,6 +1,10 @@
 .category {
   list-style: none;
   padding-top: 50px;
+}
+
+.occategory {
+  list-style: none;
   align-items: center;
   text-align: center;
 }
