@@ -268,16 +268,11 @@
     font-weight: normal;
   }
   
-  .category-item .selected .categorybig {
-    color:#d69a9b;
-  }
-
-  .category-item .selected .categorylittle {
-    color:#d69a9b;
-  }
-
-  .category-item .selected .littleheart {
-    color:#d69a9b;
+  .selected .littleheart,
+  .selected .categorybig,
+  .selected .categorylittle,
+  .selected .emoji {
+  color: #D8AAAD  /* 선택된 건 핑크색 */
   }
 
   /* 제목 스타일 */
