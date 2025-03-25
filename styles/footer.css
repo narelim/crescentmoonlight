@@ -3,11 +3,11 @@ footer {
     background: #D8AAAD;
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
-    margin-top: auto;
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
   .foot{
@@ -17,8 +17,8 @@ footer {
   }
   .foot img {
     margin-top: 90px;
-    width: 1%;
-    max-width: 1%;
+    width: 2%;
+    max-width: 2%;
     height: auto;
     position: relative;
     text-align: center;
