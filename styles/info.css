@@ -1,0 +1,61 @@
+/* 메인 페이지 */
+.hero {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .main-notice, .latest-posts {
+    background: #FFF5E1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .post-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .post-card {
+    background: #F7E1D7;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .category {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .category-container {
+    display: none; /* 기본적으로 숨김 */
+  }
+  
+  .category:empty {
+    display: none;
+  }
+  
+  .category-item {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .subcategory {
+    list-style: none;
+    padding-left: 20px;
+    display: none; /* 기본적으로 숨김 */
+  }
+  
+  .subcategory li {
+    cursor: pointer;
+  }
