@@ -33,12 +33,21 @@
   padding: 20px;
 }
 
+/*oc컨테이너 스타일*/
+.oc-categories{
+  text-align: left;
+}
+
+.sidecategory-container {
+  padding-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+
 /*버튼 들어가는 곳 스타일*/
 .character-buttons{
   align-items: flex-start;
 }
-
-
 
 .category:empty {
   display: none;
@@ -61,6 +70,7 @@
 
 .category-container{
   display: block;
+  padding-top: 40px;
 }
 
 .category:empty {

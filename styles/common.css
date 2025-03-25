@@ -173,7 +173,7 @@
 /*꾸밈요소들*/
   /*폰트*/
   @font-face {
-    font-family: 'Heart'; /* 원하는 폰트 이름 */
+    font-family: 'Cafe24Decoschool'; /* 원하는 폰트 이름 */
     src: url('assets/fonts/Cafe24Decoschool.woff2') format('woff2'); /* 폰트 파일 경로 */
     font-weight: normal;
     font-style: normal;
@@ -187,21 +187,21 @@
   }
   
   @font-face {
-    font-family: 'Breathing'; /* 원하는 폰트 이름 */
+    font-family: 'Breathing Personal Use Only'; /* 원하는 폰트 이름 */
     src: url('assets/fonts/Breathing Personal Use Only.woff2') format('woff2'); /* 폰트 파일 경로 */
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'TrajanPro'; /* 원하는 폰트 이름 */
+    font-family: 'TrajanPro-Regular'; /* 원하는 폰트 이름 */
     src: url('assets/fonts/TrajanPro-Regular.woff2') format('woff2'); /* 폰트 파일 경로 */
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'Emoji'; /* 원하는 폰트 이름 */
+    font-family: 'Segoe UI Symbol'; /* 원하는 폰트 이름 */
     src: url('assets/fonts/Segoe UI Symbol.woff2') format('woff2'); /* 폰트 파일 경로 */
     font-weight: normal;
     font-style: normal;
@@ -219,21 +219,21 @@
   
   /*특정 문자 꾸밈*/
   .heart {
-    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
   }
   
   .littleheart {
-    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
     font-size: 12px;
   }
   
   .bigheart {
-    font-family: 'Heart', serif; /* 하트 특수문자용 폰트 */
+    font-family: 'Cafe24Decoschool', serif; /* 하트 특수문자용 폰트 */
     font-size: 20px;
   }
   
   p {
-    font-family: 'TrajanPro', serif; /* 일반 텍스트용 폰트 */
+    font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
   }
 
   a {
@@ -243,16 +243,16 @@
   
   .category-title {
     font-family: 'Quinsi', serif; /* 카테고리 텍스트 */
-    font-size: 24px;
+    font-size: 40px;
   }
   
   .categorybig {
-    font-family: 'TrajanPro', serif; /* 대분류 */
+    font-family: 'TrajanPro-Regular', serif; /* 대분류 */
     font-size: 18px;
   }
   
   .categorylittle {
-    font-family: 'TrajanPro', serif; /* 소분류 */
+    font-family: 'TrajanPro-Regular', serif; /* 소분류 */
     font-size: 12px;
   }
   
@@ -270,7 +270,7 @@
 }
 
   .emoji{
-    font-family: 'Emoji', sans-serif; /*이모지*/
+    font-family: 'Segoe UI Symbol', sans-serif; /*이모지*/
   }
   
   .tab{
