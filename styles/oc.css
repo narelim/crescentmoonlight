@@ -85,7 +85,7 @@
 .category-item {
   cursor: pointer;
   font-weight: bold;
-  vertical-align : middle;
+  align-items : center;
 }
 
 .subcategory li {
@@ -94,7 +94,7 @@
 
 
 .subcategory {
-  vertical-align : middle;
+  align-items : center;
   list-style: none;
   padding-left: 20px;
   display: none; /* 기본적으로 숨김 */
