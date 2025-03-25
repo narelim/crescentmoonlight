@@ -137,17 +137,17 @@
     margin-top: auto;
   }
 
-  .footer-img{
-    width: 30px;
+  .foot{
+    text-align: center;
+    padding: 20px;
+  }
+  .hero img {
+    width: 30%;
     height: auto;
     position: relative;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
-    background-image: url('/assets/images/home/blog_element_06_01.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
   }
 
   /* 모바일 */
