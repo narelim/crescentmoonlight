@@ -253,7 +253,8 @@
   
   .categorybig {
     font-family: 'TrajanPro-Regular', serif; /* 대분류 */
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: normal;
   }
   
   .categorylittle {
