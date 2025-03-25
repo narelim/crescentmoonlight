@@ -79,7 +79,7 @@
     /* 콘텐츠 박스 (게시판) */
   .content-box {
     position: relative;
-    border: 3px solid #D8AAAD;
+    border: 4px solid #D8AAAD;
     background: #fff;
     border-radius: 0 0 14px 14px;
     padding: 80px 60px 60px; /* 🔥 탭 공간 확보 */
