@@ -27,3 +27,14 @@ footer {
     transform: translate(-50%, -50%);
     padding: 10px;
   }
+
+  .foot-font {
+    font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
+    font-weight: normal;
+    font-size: 14px;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+  }
