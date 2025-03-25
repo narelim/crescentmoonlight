@@ -28,6 +28,7 @@ footer {
   }
 
   .foot-font {
+    margin-bottom: 10px;
     font-family: 'TrajanPro-Regular', serif; /* 일반 텍스트용 폰트 */
     color:white;
     font-weight: normal;
@@ -37,5 +38,4 @@ footer {
     transform: translate(-50%, -50%);
     position: relative;
     text-align: center;
-    padding-bottom: 10px;
   }
