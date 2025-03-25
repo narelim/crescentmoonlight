@@ -102,6 +102,10 @@
   cursor: pointer;
 }
 
+.subcategory.open{
+  display: block;
+}
+
 .character-link {
   display: inline-block;
 }
