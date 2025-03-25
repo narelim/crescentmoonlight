@@ -81,6 +81,7 @@
 
     /* 메인 레이아웃 */
     .wrapper {
+      margin-bottom: 10;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
