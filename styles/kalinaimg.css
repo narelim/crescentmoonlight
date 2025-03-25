@@ -1,0 +1,139 @@
+ /*엘레먼트*/
+  /* 달 아이콘 */
+  .moon-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 달2 아이콘 */
+  .moon2-icon {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 별 아이콘 */
+  .star-icon {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_03.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 별 아이콘 */
+  .star-icon-cat {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_03.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 빛 아이콘 */
+  .light-icon {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_04.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 빛 아이콘 */
+  .oc-light-icon-1 {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/assets/images/home/blog_element_04.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 별라인 아이콘 */
+  .star-line {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 650px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_05.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 로고 아이콘 */
+  .logo-icon {
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_element_06.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  /* 로고 */
+  .mainlogo-img {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/images/home/blog_mainlogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
+  
+  /* 짧은 로고 */
+  .header-logo-img {
+    position: absolute;
+    top: 20px;
+    width: 540px;
+    height: 60px;
+    background-image: url('/assets/images/home/blog_logo_short.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* 카테고리 꾸밈요소 */
+  .category-light-img {
+    position: absolute;
+    width: 370px;
+    height:265px;
+    background-image: url('/assets/images/home/blog_element_07.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* 회전 */
+  
+  .mirror {
+    transform: scaleX(-1);
+  }
+  
+  .rotate-90 {
+    transform: rotate(90deg);
+  }

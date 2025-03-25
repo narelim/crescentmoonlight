@@ -1,0 +1,72 @@
+---
+title: Vanessa White Tea
+---
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crescent Moonlight</title>
+  
+  <!-- Google Fonts -->
+  <!-- 구글 폰트-->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Jua (헤더 메뉴, 사이드바 이름) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+<!-- Nanum Gothic (블로그 소개) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+<!-- Sonsie One (사이드바 메뉴) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap">
+<!-- Homemade Apple (리스트, 포스트 목록 등) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap">
+<!-- Black Han Sans (공지 타이틀) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
+ <!-- Nanum Myeongjo (공지 내용) -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
+
+<!--메인스타일불러오기-->
+<link rel="stylesheet" href="\styles\common.css">
+<link rel="stylesheet" href="\styles\commonimg.css">
+<link rel="stylesheet" href="\styles\vanessaimg.css">
+
+<link rel="stylesheet" href="styles\taboc.css">
+<link rel="stylesheet" href="styles\oc.css">
+
+<link rel="stylesheet" href="styles\footer.css">
+</head>
+<body>
+
+  {%- include vanessaheader.html -%}
+  
+  <div class="wrapper">
+    <!-- 공통 사이드바 -->
+        <aside class="sidebar">
+        <div class="profile">
+            <img src="\assets\images\home\profile.png" alt="프로필 이미지" class="profile-img">
+            <h3>나레</h3>
+            <p>다용도 블로그 제작중</p>
+        </div>
+      
+         <!-- ✅ 카테고리가 있을 때만 보이도록 감싸기 -->
+          <section class="category">
+            {%- include oc-oc-category.html -%}
+            </section>
+        </aside>
+        <div class="container" style="position: relative;">
+          {%- include oc-tab.html -%}
+
+            <!-- 콘텐츠 박스 -->
+          <main class="content-box">
+            <div class="oc-hero">
+              <div class="oc-title-font">Butterfly pea</div>
+                    <p>테스트</p>
+            </div>
+          </main>
+       </div>
+  </div>
+           <!-- 공통 푸터 -->
+           {%- include footer.html -%}
+
+    <script src="\script\oc.js"></script>
+</body>
+</html>
