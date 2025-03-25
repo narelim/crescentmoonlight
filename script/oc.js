@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     if (subList) subList.style.display = 'block';
     if (item) item.classList.add('selected');
-    if (heartIcon) heart.textContent = '♥';
+    if (heart) heart.textContent = '♥';
   }
   
   function highlightSubcategory(sub, category) {
