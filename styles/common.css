@@ -273,14 +273,14 @@
   
 
   .subcategory span:not(.selected) .littleheart,
-  .category-item:not(.selected) .categorybig,
+  .category-item span:not(.selected) .categorybig,
   .subcategory span:not(.selected) .categorylittle,
   .subcategory span:not(.selected) .emoji {
     color: black  /* 선택안된 건 검정색 */
   }
 
   .subcategory span.selected .littleheart,
-  .category-item .selected .categorybig,
+  .category-item span.selected .categorybig,
   .subcategory span.selected .categorylittle,
   .subcategory span.selected .emoji {
     color: #D8AAAD  /* 선택된 건 핑크색 */
