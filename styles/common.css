@@ -278,21 +278,17 @@
   gap: 4px;
 }
 
-/* 기본 색상 */
-.categorybig, .categorylittle, .emoji, .littleheart {
-  color: black;
-}
 
 /* 대분류가 선택된 경우 */
-.category-item.selected .categorybig,
-.category-item.selected .littleheart {
+.category-item span.selected .categorybig,
+.category-item span.selected .littleheart {
   color: #D8AAAD;
 }
 
 /* 소분류가 선택된 경우 */
-.subcategory .selected .categorylittle,
-.subcategory .selected .emoji,
-.subcategory .selected .littleheart {
+.subcategory span.selected .categorylittle,
+.subcategory span.selected .emoji,
+.subcategory span.selected .littleheart {
   color: #D8AAAD;
 }
 
