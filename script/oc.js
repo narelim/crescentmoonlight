@@ -1,19 +1,18 @@
 // 초기 로딩 시 현재 경로 기반으로 열기
 document.addEventListener("DOMContentLoaded", () => {
-    const path = window.location.pathname; // 예: /oc/adeline/info.html
-    const parts = path.split("/").filter(p => p); // ['oc', 'adeline', 'info']
-  
-    if (parts.length >= 3) {
-        const category = parts[1]; // adeline
-        const sub = parts[2].replace('.html', '');
-        toggleCategory(category);
-        highlightSubcategory(sub, category);
-      } 
-    if (parts.length === 2 && parts[1] === 'oc.html') {
-  toggleCategory('oc');
-  highlightSubcategory('home', 'oc');
-    }
-    });
+  const path = window.location.pathname; // 예: /oc/adeline/info.html 또는 /oc.html
+  const parts = path.split("/").filter(p => p); // ['oc', 'adeline', 'info']
+
+  if (parts.length >= 3) {
+    const category = parts[1]; // adeline
+    const sub = parts[2].replace('.html', '');
+    toggleCategory(category);
+    highlightSubcategory(sub, category);
+  } else if (parts.length === 1 && parts[0] === 'oc.html') {
+    toggleCategory('oc');
+    highlightSubcategory('home', 'oc');
+  }
+});
     
   
   function toggleCategory(category) {
