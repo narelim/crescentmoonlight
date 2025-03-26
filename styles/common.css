@@ -273,30 +273,49 @@
     margin-bottom: 2px;
   }
   
-/* 전체 구조 - 한 줄 정렬 */
-.category-item span {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+  /* 전체 구조 - 한 줄 정렬 */
+  .category-item span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* 기본 색상 */
+  .categorybig, .categorylittle, .emoji, .littleheart {
+    color: black;
+  }
+
+
+  /* 대분류 선택 시 핑크색 */
+.category-item.selected > #oc-title .title-line,
+.category-item.selected > #adeline-title .title-line,
+.category-item.selected > #vanessa-title .title-line,
+.category-item.selected > #kalina-title .title-line {
+  color: #D8AAAD;
 }
 
-/* 기본 색상 */
-.categorybig, .categorylittle, .emoji, .littleheart {
+/* 소분류 선택 시 핑크색 */
+.subcategory span.selected .title-line {
+  color: #D8AAAD;
+}
+
+/* 나머지 검정 */
+.title-line {
   color: black;
 }
 
-/* 대분류가 선택된 경우 */
-.category-item .selected .categorybig,
-.category-item .selected .littleheart {
-  color: #D8AAAD;
-}
+  /* 대분류가 선택된 경우 */
+  .category-item .selected .categorybig,
+  .category-item .selected .littleheart {
+    color: #D8AAAD;
+  }
 
-/* 소분류가 선택된 경우 */
-.subcategory .selected .categorylittle,
-.subcategory .selected .emoji,
-.subcategory .selected .littleheart {
-  color: #D8AAAD;
-}
+  /* 소분류가 선택된 경우 */
+  .subcategory .selected .categorylittle,
+  .subcategory .selected .emoji,
+  .subcategory .selected .littleheart {
+    color: #D8AAAD;
+  }
 
   /* 제목 스타일 */
   .title {
