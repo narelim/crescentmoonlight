@@ -261,14 +261,16 @@
     font-family: 'TrajanPro-Regular', serif; /* 대분류 */
     font-size: 24px;
     font-weight: normal;
-    color:black
+    color:black;
+    margin-bottom: 2px;
   }
   
   .categorylittle {
     font-family: 'TrajanPro-Regular', serif; /* 소분류 */
     font-size: 20px;
     font-weight: normal;
-    color:black
+    color:black;
+    margin-bottom: 2px;
   }
   
 /* 전체 구조 - 한 줄 정렬 */
@@ -284,8 +286,8 @@
 }
 
 /* 대분류가 선택된 경우 */
-.category-item.selected .categorybig,
-.category-item.selected .littleheart {
+.category-item .selected .categorybig,
+.category-item .selected .littleheart {
   color: #D8AAAD;
 }
 
@@ -315,7 +317,8 @@
     font-family: 'Segoe UI Symbol', sans-serif; /*이모지*/
     font-weight: normal;
     font-size: 20px;
-    color:black
+    color:black;
+    margin-bottom: 2px;
   }
   
   .tab{

@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectedCategory = document.getElementById(`${category}-title`).closest('.category-item');
   if (selectedCategory) {
     selectedCategory.classList.add('selected');
+    const heart = selected.querySelector('.littleheart');
+      if (heart) heart.textContent = '♥';
   }
 
   // 해당 카테고리의 서브카테고리 표시
@@ -66,4 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function selectSubcategory(sub, category) {
     window.location.href = `/oc/${category}/${sub}.html`;
+    if('home','oc'){
+      window.location.href= `/oc.html`
+    }
   }
