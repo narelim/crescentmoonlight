@@ -285,6 +285,10 @@
     color: black;
   }
 
+/* 나머지 검정 */
+.title-line {
+  color: black;
+}
 
   /* 대분류 선택 시 핑크색 */
 .category-item.selected > #oc-title .title-line,
@@ -299,17 +303,7 @@
   color: #D8AAAD;
 }
 
-/* 나머지 검정 */
-.title-line {
-  color: black;
-}
 
-  /* 대분류가 선택된 경우 */
-  .category-item .selected .categorybig,
-  .category-item .selected .emoji,
-  .category-item .selected .littleheart {
-    color: #D8AAAD;
-  }
 
   /* 소분류가 선택된 경우 */
   .subcategory .selected .categorylittle,
@@ -336,7 +330,7 @@
   .emoji{
     font-family: 'Noto Emoji', sans-serif; /*이모지*/
     font-weight: normal;
-    font-size: 20px;
+    font-size: 25px;
     color:black;
     margin-bottom: 2px;
   }
