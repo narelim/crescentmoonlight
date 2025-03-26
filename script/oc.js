@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     highlightSubcategory('home', 'oc');
   }
 });
-    
   
   function toggleCategory(category) {
   // 모든 카테고리의 selected 클래스 제거
@@ -60,7 +59,6 @@ function highlightSubcategory(sub, category) {
     if (subList) subList.style.display = 'block';
     if (item) item.classList.add('selected');
     if (heart) heart.textContent = '♥';
-  }
   
   function highlightSubcategory(sub, category) {
     // 모든 소분류 초기화
