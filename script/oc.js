@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sub = parts[2].replace('.html', '');
     toggleCategory(category);
     highlightSubcategory(sub, category);
-  } else if (parts.length === 1 && parts[0] === 'oc.html') {
+  }  else if (path === '/oc.html') {
     toggleCategory('oc');
     highlightSubcategory('home', 'oc');
   }
