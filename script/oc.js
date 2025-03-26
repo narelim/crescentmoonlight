@@ -16,17 +16,39 @@ document.addEventListener("DOMContentLoaded", () => {
     
   
   function toggleCategory(category) {
-    // 모든 서브카테고리 닫기
-    document.querySelectorAll('.subcategory').forEach(sub => {
-      sub.style.display = 'none';
-    });
-  
-    // 모든 대분류 초기화
-    document.querySelectorAll('.category-item').forEach(item => {
-      item.classList.remove('selected');
-      const heart = item.querySelector('.littleheart');
-      if (heart) heart.textContent = '♡';
-    });
+  // 모든 카테고리의 selected 클래스 제거
+  document.querySelectorAll('.category-item').forEach(item => {
+    item.classList.remove('selected');
+  });
+
+  // 선택한 카테고리에 selected 클래스 추가
+  const selectedCategory = document.getElementById(`${category}-title`).closest('.category-item');
+  if (selectedCategory) {
+    selectedCategory.classList.add('selected');
+  }
+
+  // 해당 카테고리의 서브카테고리 표시
+  document.querySelectorAll('.subcategory').forEach(sub => {
+    sub.style.display = 'none';
+  });
+  const currentSub = document.getElementById(`${category}-sub`);
+  if (currentSub) {
+    currentSub.style.display = 'block';
+  }
+}
+
+function highlightSubcategory(sub, category) {
+  // 모든 소분류의 selected 클래스 제거
+  document.querySelectorAll('.subcategory span').forEach(span => {
+    span.classList.remove('selected');
+  });
+
+  // 선택한 소분류에 selected 클래스 추가
+  const selectedSub = document.getElementById(`${category}-${sub}`);
+  if (selectedSub) {
+    selectedSub.classList.add('selected');
+  }
+}
   
     // 해당 대분류 열기
     const subList = document.getElementById(`${category}-sub`);
