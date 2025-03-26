@@ -69,6 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function selectSubcategory(sub, category) {
     window.location.href = `/oc/${category}/${sub}.html`;
     if('home','oc'){
-      window.location.href= `/oc.html`
+      window.location.href= `/oc.html`;
     }
   }
