@@ -21,11 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 선택한 카테고리에 selected 클래스 추가
-  const selectedCategory = document.getElementById(`${category}-title`).closest('.category-item');
+  const selectedCategory = document.getElementById(`${category}-title`);
   if (selectedCategory) {
     selectedCategory.classList.add('selected');
-    const heart = selected.querySelector('.littleheart');
-      if (heart) heart.textContent = '♥';
   }
 
   // 해당 카테고리의 서브카테고리 표시
@@ -68,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function selectSubcategory(sub, category) {
     window.location.href = `/oc/${category}/${sub}.html`;
-    if('home','oc'){
-      window.location.href= `/oc.html`;
-    }
+    //if('home','oc'){
+     // window.location.href= `/oc.html`;
+    //}
   }
