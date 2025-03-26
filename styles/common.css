@@ -271,6 +271,9 @@
     color:black
   }
   
+.category-item.selected > span {
+  color: #D8AAAD; /* 원하는 핑크색으로 바꿔줘 */
+}
 
   .subcategory span:not(.selected) .littleheart,
   .category-item span:not(.selected) .categorybig,
