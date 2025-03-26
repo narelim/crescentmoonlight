@@ -59,5 +59,9 @@ function highlightSubcategory(sub, category) {
 }
   
 function selectSubcategory(sub, category) {
-  window.location.href = `/oc/${category}/${sub}.html`;
+  if (category === 'oc' && sub === 'home') {
+    window.location.href = '/oc.html'; // Main 홈은 별도 처리
+  } else {
+    window.location.href = `/oc/${category}/${sub}.html`;
+  }
 }
