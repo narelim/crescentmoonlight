@@ -26,6 +26,10 @@
         font-family: "Nanum Myeongjo", serif;
     }  
 
+    :lang(.emoji){
+      font-family: "Noto Emoji", sans-serif;
+    }
+
     .container {
       flex: 1;
       padding: 40px 0;           /* 🔽 본문도 왼쪽에서 시작하게 */
@@ -246,6 +250,30 @@
     font-weight: normal;
   }
   
+  /* 대분류 선택 시 핑크색 */
+  .category-item.selected > #oc-title .title-line,
+  .category-item.selected > #adeline-title .title-line,
+  .category-item.selected > #vanessa-title .title-line,
+  .category-item.selected > #kalina-title .title-line {
+    color: #D8AAAD;
+  }
+  
+  /* 소분류 선택 시 핑크색 */
+  .subcategory span.selected .title-line {
+    color: #D8AAAD;
+  }
+  
+  .category-item span.selected .title-line{
+    color: #D8AAAD;
+  }
+  
+    /* 소분류가 선택된 경우 */
+    .subcategory .selected .categorylittle,
+    .subcategory .selected .emoji,
+    .subcategory .selected .littleheart {
+      color: #D8AAAD;
+    }
+
   .category-title {
     font-family: 'Quinsi', serif; /* 카테고리 텍스트 */
     font-size: 40px;
@@ -292,29 +320,7 @@
   color: black;
 }
 
-  /* 대분류 선택 시 핑크색 */
-.category-item.selected > #oc-title .title-line,
-.category-item.selected > #adeline-title .title-line,
-.category-item.selected > #vanessa-title .title-line,
-.category-item.selected > #kalina-title .title-line {
-  color: #D8AAAD;
-}
 
-/* 소분류 선택 시 핑크색 */
-.subcategory span.selected .title-line {
-  color: #D8AAAD;
-}
-
-.category-item span.selected .title-line{
-  color: #D8AAAD;
-}
-
-  /* 소분류가 선택된 경우 */
-  .subcategory .selected .categorylittle,
-  .subcategory .selected .emoji,
-  .subcategory .selected .littleheart {
-    color: #D8AAAD;
-  }
 
   /* 제목 스타일 */
   .title {
