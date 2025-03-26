@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (parts.length === 2 && parts[1] === 'oc.html') {
   toggleCategory('oc');
   highlightSubcategory('home', 'oc');
-}
-      }
+    }
     });
     
   
