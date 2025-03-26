@@ -213,6 +213,16 @@
     url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.svg#Breathing Personal Use")format("svg");
 }
+
+@font-face {
+  font-family: "Noto Emoji";
+  src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot");
+  src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.svg#Noto Emoji")format("svg");
+}
   
   /*특정 문자 꾸밈*/
   .heart {
@@ -306,6 +316,7 @@
 
   /* 대분류가 선택된 경우 */
   .category-item .selected .categorybig,
+  .category-item .selected .emoji,
   .category-item .selected .littleheart {
     color: #D8AAAD;
   }
@@ -333,7 +344,7 @@
 }
 
   .emoji{
-    font-family: 'Segoe UI Symbol', sans-serif; /*이모지*/
+    font-family: 'Noto Emoji', sans-serif; /*이모지*/
     font-weight: normal;
     font-size: 20px;
     color:black;
