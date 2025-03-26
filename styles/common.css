@@ -286,6 +286,10 @@
     color: #D8AAAD  /* 선택된 건 핑크색 */
   }
 
+.category-item.selected > span {
+  color: #D8AAAD;
+}
+
   /* 제목 스타일 */
   .title {
     font-family: 'Breathing Personal Use', serif; /* 제목 폰트 */
