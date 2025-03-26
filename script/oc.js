@@ -36,18 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 }
 
-function highlightSubcategory(sub, category) {
-  // 모든 소분류의 selected 클래스 제거
-  document.querySelectorAll('.subcategory span').forEach(span => {
-    span.classList.remove('selected');
-  });
+  function highlightSubcategory(sub, category) {
+    // 모든 소분류 초기화
+    document.querySelectorAll('.subcategory span').forEach(span => {
+      span.classList.remove('selected');
+      const heart = span.querySelector('.littleheart');
+      if (heart) heart.textContent = '♡';
+    });
 
-  // 선택한 소분류에 selected 클래스 추가
-  const selectedSub = document.getElementById(`${category}-${sub}`);
-  if (selectedSub) {
-    selectedSub.classList.add('selected');
+    // 해당 소분류 선택
+    const selected = document.getElementById(`${category}-${sub}`);
+    if (selected) {
+      selected.classList.add('selected');
+      const heart = selected.querySelector('.littleheart');
+      if (heart) heart.textContent = '♥';
+    }
   }
-}
   
     // 해당 대분류 열기
     const subList = document.getElementById(`${category}-sub`);
@@ -59,23 +63,6 @@ function highlightSubcategory(sub, category) {
     if (subList) subList.style.display = 'block';
     if (item) item.classList.add('selected');
     if (heart) heart.textContent = '♥';
-  
-  function highlightSubcategory(sub, category) {
-    // 모든 소분류 초기화
-    document.querySelectorAll('.subcategory span').forEach(span => {
-      span.classList.remove('selected');
-      const heart = span.querySelector('.littleheart');
-      if (heart) heart.textContent = '♡';
-    });
-  
-    // 해당 소분류 선택
-    const selected = document.getElementById(`${category}-${sub}`);
-    if (selected) {
-      selected.classList.add('selected');
-      const heart = selected.querySelector('.littleheart');
-      if (heart) heart.textContent = '♥';
-    }
-  }
   
   function selectSubcategory(sub, category) {
     window.location.href = `/oc/${category}/${sub}.html`;
