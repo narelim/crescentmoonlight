@@ -207,7 +207,7 @@
 }
 
 @font-face {
-  font-family: "Noto Emoji";
+  font-family: "Noto Emoji" !important;
   src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot");
   src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot?#iefix")format("embedded-opentype"),
   url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff2")format("woff2"),
@@ -305,7 +305,7 @@
   color: #D8AAAD;
 }
 
-.category-item .title .selected{
+.category-item span.selected .title-line{
   color: #D8AAAD;
 }
 
