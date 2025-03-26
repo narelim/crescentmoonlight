@@ -4,27 +4,27 @@
         <span class="tab-label">Home</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/info.html" class="tab {% if page.url == '/info.html' or contains '/info/' %} active{% endif %}">
+      <a href="/info.html" class="tab {% if page.url == '/info.html', page.url contains('/info/') %} active{% endif %}">
         <span class="tab-label">Info</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/notice.html" class="tab {% if page.url == '/notice.html' or contains '/notice/' %} active{% endif %}">
+      <a href="/notice.html" class="tab {% if page.url == '/notice.html', page.url contains('/notice/') %} active{% endif %}">
         <span class="tab-label">Notice</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/oc.html" class="tab {% if page.url == '/oc.html' or contains '/oc/' %} active{% endif %}" onclick="switchCategory('oc')">
+      <a href="/oc.html" class="tab {% if page.url == '/oc.html', page.url contains('/oc/') %} active{% endif %}" onclick="switchCategory('oc')">
         <span class="tab-label">OC</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/gallery.html" class="tab {% if page.url == '/gallery.html' or contains '/gallery/' %} active{% endif %}">
+      <a href="/gallery.html" class="tab {% if page.url == '/gallery.html', page.url contains('/gallery/') %} active{% endif %}">
         <span class="tab-label">Gallery</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/dnd.html" class="tab {% if page.url == '/dnd.html' or contains '/dnd/' %} active{% endif %}" onclick="switchCategory('dnd')">
+      <a href="/dnd.html" class="tab {% if page.url == '/dnd.html', page.url contains('/dnd/') %} active{% endif %}" onclick="switchCategory('dnd')">
         <span class="tab-label">DnD</span>
         <div class="star-icon-cat"></div>
       </a>
-      <a href="/secret.html" class="tab {% if page.url == '/secret.html' or contains '/secret/' %} active{% endif %}">
+      <a href="/secret.html" class="tab {% if page.url == '/secret.html', page.url contains('/secret/') %} active{% endif %}">
         <span class="tab-label">Locked</span>
         <div class="star-icon-cat"></div>
       </a>
