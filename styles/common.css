@@ -209,16 +209,6 @@
     url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/ca9698e55069c3859da5c293ca67a325.svg#Breathing Personal Use")format("svg");
 }
-
-@font-face {
-  font-family: "Noto Emoji" !important;
-  src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot");
-  src: url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.svg#Noto Emoji")format("svg");
-}
   
   /*특정 문자 꾸밈*/
   .heart {
@@ -333,11 +323,11 @@
 }
 
   .emoji{
-    font-family: 'Noto Emoji', serif; /*이모지*/
-    font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 2px;
-  }
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
   
   .tab{
     font-family: 'Quinsi', serif;
