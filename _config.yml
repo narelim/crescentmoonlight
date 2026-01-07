@@ -3,7 +3,7 @@ author:
   name: princess201
   email: narelim0119@gmail.com
 
-description: >
+#description: >
   Write an awesome description for your new site here. You can edit this line
   in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
@@ -18,7 +18,7 @@ description: >
 # add a line comment on "theme: minima" above.
 #remote_theme: jekyll/minima
 
-plugins:
+#plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -31,7 +31,7 @@ plugins:
     # - notice.md
 
 # Site settings
-url: "https://narelim.github.io"
-baseurl: ""
-future: true
+# url: "https://narelim.github.io"
+#baseurl: ""
+#future: true
 
